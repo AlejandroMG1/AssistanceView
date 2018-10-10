@@ -1,0 +1,7 @@
+{
+  "name": "Vistas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

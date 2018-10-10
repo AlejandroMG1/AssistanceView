@@ -1,0 +1,20 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+<ion-header>
+  <ion-navbar>
+    <ion-title>Groups</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let group of groupList" (click)="showGroupSchedule(group)">
+      <h2>{{group.name}}</h2>
+    </button>
+  </ion-list>
+</ion-content>
