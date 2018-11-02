@@ -5,7 +5,6 @@ import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GroupsViewPage } from '../pages/groups-view/groups-view';
 import {GroupSchedulePage} from '../pages/group-schedule/group-schedule';
@@ -13,12 +12,12 @@ import {AthleteListPage} from '../pages/athlete-list/athlete-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { GroupsProvider } from '../providers/groups/groups';
 
 let pages = [
   MyApp,
   AboutPage,
   ContactPage,
-  HomePage,
   TabsPage,
   GroupsViewPage,
   GroupSchedulePage,
@@ -36,7 +35,8 @@ let pages = [
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    GroupsProvider
   ]
 })
 export class AppModule { }

@@ -16,7 +16,7 @@
 <ion-content>
     <ion-content>
         <ion-list>
-          <button ion-item *ngFor="let schedule of schedules" (click)="showGroupAthletes()">
+          <button ion-item *ngFor="let schedule of schedules" (click)="showGroupAthletes(schedule)">
             <h2>{{schedule.date}}</h2>
           </button>
         </ion-list>

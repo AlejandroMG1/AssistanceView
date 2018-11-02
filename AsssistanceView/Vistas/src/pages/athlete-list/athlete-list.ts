@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Athlete } from '../../Athlete';
+import { Athlete } from '../../data/athlete.interface';
+import { Assistance } from '../../data/assistance.interfaz';
+import { Schedule } from '../../data/schedule.interface';
 
 /**
  * Generated class for the AthleteListPage page.
@@ -14,18 +16,26 @@ import { Athlete } from '../../Athlete';
   selector: 'page-athlete-list',
   templateUrl: 'athlete-list.html',
 })
-export class AthleteListPage {
+export class AthleteListPage implements OnInit{
 
-  athletes:Athlete[];
-  groupName:String;
+  athletes: Athlete[];
+  date: Schedule;
+  assistance: Assistance;
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.athletes=navParams.get("athletes");
-    this.groupName=navParams.get("name");
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AthleteListPage');
   }
-
+  ngOnInit(){
+    this.athletes=this.navParams.get("athletes");
+    this.date = this.navParams.get("date");
+    console.log(this.date);
+  }
+  athleteAssisted(athlete: Athlete){
+    
+  }
+  
 }

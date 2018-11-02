@@ -6,14 +6,21 @@
   </div>
 </div>
 <ion-header>
-  <ion-navbar color = "primary">
+  <ion-navbar color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
     <ion-title>Groups</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let group of groupList" (click)="showGroupSchedule(group)">
+    <button ion-item *ngFor="let group of groupList" 
+    [navPush]="GroupSchedulePage" 
+    [navParams]="group">
       <h2>{{group.name}}</h2>
     </button>
   </ion-list>

@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Groups } from '../../Example';
-import { Group } from '../../Group';
+import { Schedule } from '../../data/schedule.interface';
+import { Athlete } from '../../data/athlete.interface';
+import groups from '../../data/groups';
 import { GroupSchedulePage } from '../group-schedule/group-schedule';
+import { GroupsProvider } from '../../providers/groups/groups';
 
 /**
  * Generated class for the GroupsViewPage page.
@@ -16,15 +18,22 @@ import { GroupSchedulePage } from '../group-schedule/group-schedule';
   selector: 'page-groups-view',
   templateUrl: 'groups-view.html',
 })
-export class GroupsViewPage {
+export class GroupsViewPage implements OnInit{
 
 
   splash = true;
   tabBarElement: any;
-  groupList = Groups;
+  groupList: {
+    id: number,
+    name: string,
+    schedules: Schedule[],
+    athletes:Athlete[]
+  }[];
+  GroupSchedulePage = GroupSchedulePage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private groupsProvider: GroupsProvider) {
     this.tabBarElement = document.querySelector('.tabbar');
+    groupsProvider.addGroupList(this.groupList);
   }
 
   ionViewDidLoad() {
@@ -34,9 +43,7 @@ export class GroupsViewPage {
       this.tabBarElement.style.display = 'flex';
     }, 4000);
   }
-
-  showGroupSchedule(group:Group){
-    this.navCtrl.push(GroupSchedulePage,group);
+  ngOnInit(){
+    this.groupList = groups;
   }
-
 }

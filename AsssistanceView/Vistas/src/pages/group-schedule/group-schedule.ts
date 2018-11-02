@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Group } from '../../Group';
-import { Schedule } from '../../schedule';
 import { AthleteListPage } from '../athlete-list/athlete-list';
+import { Schedule } from '../../data/schedule.interface';
+import { Athlete } from '../../data/athlete.interface';
 
 /**
  * Generated class for the GroupSchedulePage page.
@@ -16,21 +16,31 @@ import { AthleteListPage } from '../athlete-list/athlete-list';
   selector: 'page-group-schedule',
   templateUrl: 'group-schedule.html',
 })
-export class GroupSchedulePage {
+export class GroupSchedulePage implements OnInit {
 
-  group:Group; 
-  schedules:Schedule[];
+  group: {
+    id: number,
+    name: string,
+    schedules: Schedule[],
+    athletes:Athlete[]
+  };
+  schedules: Schedule[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.group=navParams.data;
-    this.schedules=this.group.schenduls;
+    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GroupSchedulePage');
+    console.log(this.schedules);
   }
 
-  showGroupAthletes(){
-    this.navCtrl.push(AthleteListPage,this.group);
+  showGroupAthletes(schedule: Schedule){
+    this.navCtrl.push(AthleteListPage,{athletes: this.group.athletes,date: schedule});
+  }
+  ngOnInit(){
+    this.group = this.navParams.data;
+    this.schedules = this.group.schedules;
+    
   }
 }
