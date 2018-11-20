@@ -2,107 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37a14ad9-a8f0-488f-b7a9-1bd590f4fc81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AsssistanceView.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/acorn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/acorn.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/atob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/atob.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/autoprefixer-info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/autoprefixer-info.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/browserslist.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/build-optimizer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/build-optimizer.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/cordova" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/cordova.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/errno" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/errno.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/esparse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/esparse.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/esvalidate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/esvalidate.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/in-install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/in-install.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/in-publish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/in-publish.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ionic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ionic-app-scripts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ionic-app-scripts.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ionic-lab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ionic-lab.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ionic.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/js-yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/js-yaml.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/json5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/json5.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/miller-rabin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/miller-rabin.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/mime" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/mime.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/mkdirp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/mkdirp.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ncp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ncp.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ng-xi18n" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ng-xi18n.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ngc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/ngc.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/node-gyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/node-gyp.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/node-sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/node-sass.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/nopt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/nopt.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/not-in-install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/not-in-install.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/not-in-publish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/not-in-publish.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/purify" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/purify.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/rimraf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/rimraf.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/rollup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/rollup.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sassgraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sassgraph.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/semver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/semver.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sha.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sha.js.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/src/data/group.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-conv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-conv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-sign" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-sign.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-verify" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-verify.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/strip-indent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/strip-indent.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tree-kill" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tree-kill.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tsc.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tsickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tsickle.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tslint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tslint.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tsserver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/tsserver.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/uglifyjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/uglifyjs.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/uuid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/uuid.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/webpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/webpack.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/which" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/which.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vistas/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -141,12 +40,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ts" value="189" />
+          <entry key="ts" value="253" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="TypeScript" value="189" />
+          <entry key="TypeScript" value="253" />
         </counts>
       </usages-collector>
     </session>
@@ -158,14 +57,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -186,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.interface.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="69">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="22" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -220,10 +116,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/group.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/coach.interface.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/group.interface.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" />
       </list>
     </option>
   </component>
@@ -338,18 +234,17 @@
       <option name="presentableId" value="Default" />
       <updated>1542743115062</updated>
       <workItem from="1542743118835" duration="756000" />
-      <workItem from="1542745393483" duration="2879000" />
+      <workItem from="1542745393483" duration="3171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3635000" />
+    <option name="totallyTimeSpent" value="3927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -362,7 +257,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32861635" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32861635" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -375,29 +270,7 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts</url>
-          <line>12</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.interface.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -411,11 +284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-897" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/coach.interface.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -423,13 +291,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.interface.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="69">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>

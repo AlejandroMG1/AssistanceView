@@ -1,19 +1,8 @@
-import { Schedule } from "../../data/schedule.interface";
-import { Athlete } from "../../data/athlete.interface";
+import {Group} from "../../data/group.interface";
 
 export class GroupsProvider {
-  private groupList:  {
-    id: number,
-    name: string,
-    schedules: Schedule[],
-    athletes:Athlete[]
-  }[];
-  addGroupList(groupList:  {
-    id: number,
-    name: string,
-    schedules: Schedule[],
-    athletes:Athlete[]
-  }[]){
+  private groupList:  Group[];
+  addGroupList(groupList:  Group[]){
     this.groupList = groupList;
   }
   getGroup (id: number) {
@@ -21,8 +10,7 @@ export class GroupsProvider {
       return group.id == id;
     })
   }
-  editGroup (id: number) {
-    let group = this.getGroup(id);
+  editGroup (group: Group, id: number) {
 
   }
 
