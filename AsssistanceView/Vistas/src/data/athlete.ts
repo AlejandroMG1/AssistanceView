@@ -1,8 +1,6 @@
-import { Assistance } from "./assistance";
-
 export class Athlete{
+    idGroup: number;
     id:number;
     dni:number;
     name:string;
-    assistance: Assistance[];
 }

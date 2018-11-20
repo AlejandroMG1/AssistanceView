@@ -5,7 +5,7 @@ import { Athlete } from '../../data/athlete';
 import groups from '../../data/groups';
 import { GroupSchedulePage } from '../group-schedule/group-schedule';
 import { GroupsProvider } from '../../providers/groups/groups';
-import { Group } from '../../data/group';
+import {Group} from "../../data/group";
 
 /**
  * Generated class for the GroupsViewPage page.

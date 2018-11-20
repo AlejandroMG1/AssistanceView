@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37a14ad9-a8f0-488f-b7a9-1bd590f4fc81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vistas/src/data/assistance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/assistance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vistas/src/data/athlete.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/athlete.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vistas/src/data/group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/group.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vistas/src/data/schedule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/schedule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,45 +25,48 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="ts" value="7" />
+          <entry key="ts" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="7" />
+          <entry key="TypeScript" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
+          <entry key="TypeScriptServerServiceImpl" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ts" value="550" />
+          <entry key="gitignore" value="2" />
+          <entry key="ts" value="636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="TypeScript" value="550" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="TypeScript" value="636" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="23">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -67,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -80,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="46">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -89,20 +97,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="138">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="e#0#46#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vistas/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="131">
+              <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="23">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -136,6 +164,8 @@
         <option value="$PROJECT_DIR$/Vistas/src/data/coach.interface.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/group.interface.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" />
+        <option value="$PROJECT_DIR$/Vistas/.gitignore" />
+        <option value="$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/assistance.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/athlete.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/schedule.ts" />
@@ -155,11 +185,271 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/Vistas/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/@ionic/cli-framework/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/@ionic/discover/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/@ionic/utils-fs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/@ionic/utils-network/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/agent-base/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ansi-align/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ansi-escapes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ast-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/astral-regex/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/async-limiter/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/asynckit/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/boxen/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/capture-stack-trace/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/chardet/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ci-info/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/cli-boxes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/cli-cursor/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/cli-width/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/co/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/configstore/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/cookiejar/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/create-error-class/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/crypto-random-string/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/data-uri-to-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/deep-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/degenerator/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/diff/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/dot-prop/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/duplexer2/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/duplexer2/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/duplexer3/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/elementtree/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/es6-promise/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/es6-promisify/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/escodegen/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/esprima/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/execa/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/external-editor/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/fast-levenshtein/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/figures/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/file-uri-to-path/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/formidable/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ftp/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ftp/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ftp/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ftp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/get-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/get-uri/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/get-uri/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/get-uri/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/get-uri/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/global-dirs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/got/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/http-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/http-proxy-agent/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/http-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/https-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/https-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/import-lazy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/imurmurhash/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/inquirer/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/inquirer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ip/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-ci/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-installed-globally/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-npm/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-obj/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-path-inside/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-redirect/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-retry-allowed/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/is-wsl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/latest-version/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/leek/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/leek/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/leek/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/levn/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash._baseassign/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash._basecopy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash._bindcallback/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash._createassigner/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash._getnative/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash._isiterateecall/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash.assign/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash.isarguments/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash.isarray/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash.keys/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash.restparam/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/log-update/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/log-update/node_modules/wrap-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/log-update/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lowercase-keys/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/macos-release/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/make-dir/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/minipass/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mkdirp/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ncp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/netmask/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/npm-run-path/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/onetime/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/opn/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/optionator/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/os-name/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/p-finally/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/pac-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/pac-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/pac-resolver/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/package-json/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/path-is-inside/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/prelude-ls/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/prepend-http/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/proxy-from-env/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/pseudomap/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/raw-body/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rc/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/registry-auth-token/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/registry-url/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/restore-cursor/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rsvp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/run-async/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/ajax/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/operators/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/src/ajax/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/src/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/src/operators/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/src/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/src/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/rxjs/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/semver-diff/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/slice-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/smart-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/socks-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/socks/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/split2/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ssh-config/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/stream-combiner2/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/stream-combiner2/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/string-width/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/strip-ansi/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/strip-eof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/superagent-proxy/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/superagent-proxy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/superagent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/superagent/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/superagent/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/tar/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/term-size/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/through2/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/thunkify/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/timed-out/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/tmp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/tree-kill/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/type-check/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/unique-string/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/untildify/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/unzip-response/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/update-notifier/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/url-parse-lax/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/widest-line/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/win-release/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/wrap-ansi/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/wrap-ansi/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/write-file-atomic/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/ws/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/xdg-basedir/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/xregexp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ionic/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="661" />
-    <option name="width" value="711" />
+    <option name="x" value="582" />
+    <option name="width" value="791" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -184,14 +474,13 @@
               <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
               <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
               <item name="Vistas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
               <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
               <item name="Vistas" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
@@ -225,9 +514,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="excluded.www.directory" value="true" />
-    <property name="last_opened_file_path" value="D:/CURSOS/IONIC PRUEBAS/quotes-app" />
+    <property name="last_opened_file_path" value="D:/CURSOS/IONIC PRUEBAS/recipeBook-app" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="D:\DRIVE\udea\Analisis 2\Proyectos\ClubBaloncestoV2\AssistanceView\AsssistanceView\Vistas\node_modules\typescript\lib" />
   </component>
@@ -254,20 +544,21 @@
       <option name="presentableId" value="Default" />
       <updated>1542743115062</updated>
       <workItem from="1542743118835" duration="756000" />
-      <workItem from="1542745393483" duration="4848000" />
+      <workItem from="1542745393483" duration="6067000" />
+      <workItem from="1542752224575" duration="2002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5604000" />
+    <option name="totallyTimeSpent" value="8825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -277,8 +568,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32861635" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32861635" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -294,7 +586,57 @@
     <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -305,44 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="23">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
