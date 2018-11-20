@@ -5,6 +5,7 @@ import { Athlete } from '../../data/athlete';
 import groups from '../../data/groups';
 import { GroupSchedulePage } from '../group-schedule/group-schedule';
 import { GroupsProvider } from '../../providers/groups/groups';
+import { Group } from '../../data/group';
 
 /**
  * Generated class for the GroupsViewPage page.
@@ -23,12 +24,7 @@ export class GroupsViewPage implements OnInit{
 
   splash = true;
   tabBarElement: any;
-  groupList: {
-    id: number,
-    name: string,
-    schedules: Schedule[],
-    athletes:Athlete[]
-  }[];
+  groupList: Group[];
   GroupSchedulePage = GroupSchedulePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private groupsProvider: GroupsProvider) {

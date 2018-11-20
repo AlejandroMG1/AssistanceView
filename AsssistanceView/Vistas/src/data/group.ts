@@ -11,11 +11,6 @@ export class Group {
     this.athletes = [];
     this.schedules = [];
   }
-  deleteAthlete(id: number){
-    let idx = this.athletes.findIndex(athlete => {
-      return athlete.id == id;
-    });
-      this.athletes.splice(idx, 1);
-  }
+  
 }
 

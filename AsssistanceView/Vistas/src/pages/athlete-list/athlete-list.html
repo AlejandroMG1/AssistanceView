@@ -15,9 +15,12 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let athlete of athletes">
+    <ion-item *ngFor="let athlete of athletes" (press)="openMenu()">
       <ion-label>{{athlete.name}}</ion-label>
       <ion-toggle color="danger" *ngIf="!athleteAssisted(athlete)"></ion-toggle>
     </ion-item>
   </ion-list>
+  <ion-fab right bottom>
+    <button ion-fab color="primary"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>

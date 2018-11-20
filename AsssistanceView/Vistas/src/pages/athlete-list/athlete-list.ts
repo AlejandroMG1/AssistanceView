@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Platform, ActionSheetController, IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Athlete } from '../../data/athlete';
 import { Assistance } from '../../data/assistance';
 import { Schedule } from '../../data/schedule';
@@ -16,26 +16,58 @@ import { Schedule } from '../../data/schedule';
   selector: 'page-athlete-list',
   templateUrl: 'athlete-list.html',
 })
-export class AthleteListPage implements OnInit{
+export class AthleteListPage implements OnInit {
+
+  ngOnInit() {
+    this.athletes = this.navParams.get("athletes");
+    this.date = this.navParams.get("date");
+    console.log(this.date);
+  }
 
   athletes: Athlete[];
   date: Schedule;
   assistance: Assistance;
-  
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public platform: Platform, public actionsheetCtrl: ActionSheetController,
+    public navCtrl: NavController, public navParams: NavParams) {
+
+  }
+
+  openMenu() {
+    let actionSheet = this.actionsheetCtrl.create({
+      
+      cssClass: 'action-sheets-basic-page',
+      buttons: [
+        {
+          text: 'Borrar',
+          role: 'destructive',
+          icon: !this.platform.is('ios') ? 'trash' : null,
+          handler: () => {
+            console.log('Delete clicked');
+          }
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel', // will always sort to be on the bottom
+          icon: !this.platform.is('ios') ? 'close' : null,
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+    actionSheet.present();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AthleteListPage');
   }
-  ngOnInit(){
-    this.athletes=this.navParams.get("athletes");
-    this.date = this.navParams.get("date");
-    console.log(this.date);
+
+
+
+  athleteAssisted(athlete: Athlete) {
+
   }
-  athleteAssisted(athlete: Athlete){
-    
-  }
-  
+
 }
