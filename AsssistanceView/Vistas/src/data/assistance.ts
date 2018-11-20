@@ -1,4 +1,4 @@
-export interface Assistance{
+export class Assistance{
     idDate: number;
     assisted: boolean;
 }

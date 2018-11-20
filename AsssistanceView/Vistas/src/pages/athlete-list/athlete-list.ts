@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Athlete } from '../../data/athlete.interface';
-import { Assistance } from '../../data/assistance.interfaz';
-import { Schedule } from '../../data/schedule.interface';
+import { Athlete } from '../../data/athlete';
+import { Assistance } from '../../data/assistance';
+import { Schedule } from '../../data/schedule';
 
 /**
  * Generated class for the AthleteListPage page.

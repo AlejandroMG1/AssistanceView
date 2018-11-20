@@ -1,6 +1,6 @@
-import { Assistance } from "./assistance.interfaz";
+import { Assistance } from "./assistance";
 
-export interface Athlete{
+export class Athlete{
     id:number;
     dni:number;
     name:string;

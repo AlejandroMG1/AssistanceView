@@ -1,4 +1,4 @@
-import {Group} from "../../data/group.interface";
+import {Group} from "../../data/group";
 
 export class GroupsProvider {
   private groupList:  Group[];
@@ -11,7 +11,7 @@ export class GroupsProvider {
     })
   }
   editGroup (group: Group, id: number) {
-
+    this.groupList[id] = group;
   }
 
 }
