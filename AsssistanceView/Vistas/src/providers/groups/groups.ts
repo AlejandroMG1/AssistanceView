@@ -16,7 +16,14 @@ export class GroupsProvider {
   }[]){
     this.groupList = groupList;
   }
-  getGroup(id: number){
-    return this.groupList.slice(id,id+1);
+  getGroup (id: number) {
+    return this.groupList.findIndex((group) => {
+      return group.id == id;
+    })
   }
+  editGroup (id: number) {
+    let group = this.getGroup(id);
+
+  }
+
 }

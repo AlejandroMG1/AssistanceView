@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37a14ad9-a8f0-488f-b7a9-1bd590f4fc81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AsssistanceView.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/acorn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/acorn.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/atob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/atob.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/autoprefixer-info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/autoprefixer-info.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/browserslist.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/build-optimizer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/build-optimizer.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/cordova" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/cordova.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/errno" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/errno.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/esparse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/esparse.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/esvalidate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/esvalidate.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/in-install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/in-install.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/in-publish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/in-publish.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ionic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ionic-app-scripts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ionic-app-scripts.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ionic-lab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ionic-lab.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ionic.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/js-yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/js-yaml.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/json5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/json5.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/miller-rabin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/miller-rabin.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/mime" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/mime.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/mkdirp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/mkdirp.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ncp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ncp.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ng-xi18n" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ng-xi18n.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ngc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/ngc.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/node-gyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/node-gyp.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/node-sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/node-sass.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/nopt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/nopt.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/not-in-install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/not-in-install.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/not-in-publish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/not-in-publish.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/purify" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/purify.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/rimraf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/rimraf.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/rollup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/rollup.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sassgraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sassgraph.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/semver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/semver.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sha.js.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/src/data/group.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-conv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-conv.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-sign" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-sign.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-verify" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/sshpk-verify.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/strip-indent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/strip-indent.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tree-kill" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tree-kill.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tsc.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tsickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tsickle.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tslint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tslint.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tsserver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/tsserver.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/uglifyjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/uglifyjs.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/uuid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/uuid.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/webpack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/webpack.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/which" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/which.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/npm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vistas/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1890183338">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="ts" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="TypeScript" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="ts" value="189" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="TypeScript" value="189" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.interfaz.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-897" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.interface.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.interface.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/data/coach.interface.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.interface.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/data/group.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/data/coach.interface.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/data/group.interface.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/Vistas/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Vistas/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="661" />
+    <option name="width" value="711" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+              <item name="groups" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="excluded.www.directory" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ts.external.directory.path" value="D:\DRIVE\udea\Analisis 2\Proyectos\ClubBaloncestoV2\AssistanceView\AsssistanceView\Vistas\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37a14ad9-a8f0-488f-b7a9-1bd590f4fc81" name="Default Changelist" comment="" />
+      <created>1542743115062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542743115062</updated>
+      <workItem from="1542743118835" duration="756000" />
+      <workItem from="1542745393483" duration="2879000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3635000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32861635" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.interface.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.interfaz.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.interface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/coach.interface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.interface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
