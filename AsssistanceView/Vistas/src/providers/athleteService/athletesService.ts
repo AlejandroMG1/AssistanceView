@@ -6,7 +6,7 @@ export class AthletesProvider {
   constructor(){
     this.athleteList = athleteDummy;
   }
-  addAthlete (dni: number, name: string, idGroup: number){
+  addAthlete(dni: number, name: string, idGroup: number) {
     let athlete: Athlete = new Athlete(dni, name, this.athleteList.length, idGroup);
     this.athleteList.push(athlete);
   }

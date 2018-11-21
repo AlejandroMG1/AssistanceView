@@ -9,6 +9,9 @@ export class GroupsProvider {
   addGroupList(groupList:  Group[]){
     this.groupList = groupList;
   }
+  getGroupList() {
+    return this.groupList;
+  }
   getGroup (id: number) {
     return this.groupList.findIndex((group) => {
       return group.id == id;
