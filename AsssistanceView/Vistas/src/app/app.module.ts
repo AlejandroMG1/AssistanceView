@@ -9,10 +9,15 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { GroupsViewPage } from '../pages/groups-view/groups-view';
 import {GroupSchedulePage} from '../pages/group-schedule/group-schedule';
 import {AthleteListPage} from '../pages/athlete-list/athlete-list';
+import {AddAthletePage} from '../pages/add-athlete/add-athlete';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GroupsProvider } from '../providers/groupsService/groupsService';
+import { AthletesProvider } from '../providers/athleteService/athletesService';
+import { scheduleProvider } from '../providers/scheduleService/scheduleService';
+import { AssistanceProvider } from '../providers/assistancesService/assistanceService';
 
 let pages = [
   MyApp,
@@ -22,6 +27,7 @@ let pages = [
   GroupsViewPage,
   GroupSchedulePage,
   AthleteListPage,
+  AddAthletePage
 ];
 
 @NgModule({
@@ -36,7 +42,7 @@ let pages = [
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    GroupsProvider
+    GroupsProvider,AthletesProvider,scheduleProvider,AssistanceProvider
   ]
 })
 export class AppModule { }

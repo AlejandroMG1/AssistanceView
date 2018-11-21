@@ -5,6 +5,7 @@ export class GroupsProvider {
   private groupList:  Group[];
   constructor(){
     this.groupList = groupDummy;
+    console.log(this.groupList);
   }
   addGroupList(groupList:  Group[]){
     this.groupList = groupList;
