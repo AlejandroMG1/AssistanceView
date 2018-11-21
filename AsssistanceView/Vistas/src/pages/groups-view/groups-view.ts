@@ -29,7 +29,6 @@ export class GroupsViewPage implements OnInit{
   constructor(public navCtrl: NavController, public navParams: NavParams, private groupsProvider: GroupsProvider) {
     this.tabBarElement = document.querySelector('.tabbar');
     this.groupList = this.groupsProvider.getGroupList();
-    console.log(this.groupList);
   }
 
   ionViewDidLoad() {

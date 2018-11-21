@@ -38,7 +38,7 @@ export class GroupSchedulePage implements OnInit {
   }
 
   showGroupAthletes(schedule: Schedule){
-    this.navCtrl.push(AthleteListPage,{athletes: this.group.athletes,date: schedule});
+    this.navCtrl.push(AthleteListPage,{groupId: this.group.id,date: schedule});
   }
   ngOnInit(){
     this.group = this.navParams.data;
