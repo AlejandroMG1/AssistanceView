@@ -3,6 +3,7 @@ import { Platform, ActionSheetController, IonicPage, NavController, NavParams } 
 import { Athlete } from '../../data/athlete';
 import { Assistance } from '../../data/assistance';
 import { Schedule } from '../../data/schedule';
+import {AthletesProvider} from '../../providers/athleteService/athletesService'
 
 /**
  * Generated class for the AthleteListPage page.
@@ -19,18 +20,20 @@ import { Schedule } from '../../data/schedule';
 export class AthleteListPage implements OnInit {
 
   ngOnInit() {
-    this.athletes = this.navParams.get("athletes");
+    this.groupId = this.navParams.get("groupId");
+    this.athletes=this.athletesProvider.getAthleteByIdGroup(this.groupId);
     this.date = this.navParams.get("date");
     console.log(this.date);
   }
 
+  groupId: number;
   athletes: Athlete[];
   date: Schedule;
   assistance: Assistance;
 
 
   constructor(public platform: Platform, public actionsheetCtrl: ActionSheetController,
-    public navCtrl: NavController, public navParams: NavParams) {
+    public navCtrl: NavController, public navParams: NavParams, private athletesProvider:AthletesProvider) {
 
   }
 
