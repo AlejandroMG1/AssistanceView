@@ -12,7 +12,7 @@ import {AthleteListPage} from '../pages/athlete-list/athlete-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { GroupsProvider } from '../providers/groups/groups';
+import { GroupsProvider } from '../providers/groupsService/groupsService';
 
 let pages = [
   MyApp,

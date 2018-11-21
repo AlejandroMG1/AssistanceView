@@ -1,7 +1,11 @@
 import {Group} from "../../data/group";
+import groupDummy from "../../data/dummy/groupDummy";
 
 export class GroupsProvider {
   private groupList:  Group[];
+  constructor(){
+    this.groupList = groupDummy;
+  }
   addGroupList(groupList:  Group[]){
     this.groupList = groupList;
   }

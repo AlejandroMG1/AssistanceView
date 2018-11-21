@@ -4,7 +4,7 @@ import { Schedule } from '../../data/schedule';
 import { Athlete } from '../../data/athlete';
 import groups from '../../data/groups';
 import { GroupSchedulePage } from '../group-schedule/group-schedule';
-import { GroupsProvider } from '../../providers/groups/groups';
+import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import {Group} from "../../data/group";
 
 /**
