@@ -21,7 +21,7 @@ export class AthleteListPage implements OnInit {
 
   ngOnInit() {
     this.groupId = this.navParams.get("groupId");
-    this.athletes=this.athletesProvider.getAthleteByIdGroup(this.groupId);
+    this.athletes=this.athletesProvider.getAthletesByIdGroup(this.groupId);
     this.date = this.navParams.get("date");
     console.log(this.date);
   }

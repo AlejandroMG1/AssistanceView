@@ -6,7 +6,7 @@ export default [
       id: 2,
       name: "Equipo2"
     },{
-      id: 1,
+      id: 3,
       name: "Equipo3"
     }
   ]
