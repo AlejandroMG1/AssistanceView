@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AthleteListPage } from '../athlete-list/athlete-list';
 import { Schedule } from '../../data/schedule';
 import { Athlete } from '../../data/athlete';
+import {} from '../../providers/scheduleService'
+import { scheduleProvider } from '../../providers/scheduleService/scheduleService';
 
 /**
  * Generated class for the GroupSchedulePage page.
@@ -26,7 +28,7 @@ export class GroupSchedulePage implements OnInit {
   };
   schedules: Schedule[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private scheduleProvier:scheduleProvider) {
     
   }
 
@@ -40,7 +42,7 @@ export class GroupSchedulePage implements OnInit {
   }
   ngOnInit(){
     this.group = this.navParams.data;
-    this.schedules = this.group.schedules;
+    this.schedules = this.scheduleProvier.getSchedule();
     
   }
 }

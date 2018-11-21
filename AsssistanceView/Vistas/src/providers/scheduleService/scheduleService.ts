@@ -6,4 +6,7 @@ export class scheduleProvider {
   constructor(){
     this.scheduleList = scheduleDummy;
   }
+  getSchedule(){
+    return this.scheduleList;
+  }
 }
