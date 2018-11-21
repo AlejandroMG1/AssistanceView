@@ -1,6 +1,3 @@
 export class Athlete{
-    idGroup: number;
-    id:number;
-    dni:number;
-    name:string;
+  constructor(dni: number, name: string, id: number, idGroup: number){}
 }

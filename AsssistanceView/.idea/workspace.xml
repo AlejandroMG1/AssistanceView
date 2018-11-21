@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37a14ad9-a8f0-488f-b7a9-1bd590f4fc81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Vistas/src/providers/assistances/assistance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vistas/src/providers/athlete/athletes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vistas/src/data/assistance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/assistance.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vistas/src/data/athlete.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/athlete.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vistas/src/data/group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/group.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vistas/src/data/schedule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/data/schedule.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +22,7 @@
     <session id="1890183338">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.74" value="1" />
@@ -32,13 +32,15 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="ts" value="9" />
+          <entry key="js" value="1" />
+          <entry key="ts" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="9" />
+          <entry key="TypeScript" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -49,13 +51,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="ts" value="636" />
+          <entry key="ts" value="1068" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="636" />
+          <entry key="TypeScript" value="1068" />
         </counts>
       </usages-collector>
     </session>
@@ -66,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -74,22 +76,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="322">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/providers/athlete/athletes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vistas/src/providers/assistances/assistance.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-345" />
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="23">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -97,28 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vistas/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -126,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="338">
               <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
@@ -144,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <caret line="1" column="68" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -166,10 +168,13 @@
         <option value="$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts" />
         <option value="$PROJECT_DIR$/Vistas/.gitignore" />
         <option value="$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts" />
-        <option value="$PROJECT_DIR$/Vistas/src/data/assistance.ts" />
-        <option value="$PROJECT_DIR$/Vistas/src/data/athlete.ts" />
-        <option value="$PROJECT_DIR$/Vistas/src/data/schedule.ts" />
         <option value="$PROJECT_DIR$/Vistas/src/data/group.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/data/athlete.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/providers/athlete/athletes.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/providers/assistances/assistance.js" />
+        <option value="$PROJECT_DIR$/Vistas/src/providers/assistances/assistance.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/data/assistance.ts" />
+        <option value="$PROJECT_DIR$/Vistas/src/data/schedule.ts" />
       </list>
     </option>
   </component>
@@ -494,7 +499,46 @@
               <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
               <item name="Vistas" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="athlete-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="groups-view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+              <item name="assistances" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AsssistanceView" type="462c0819:PsiDirectoryNode" />
+              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+              <item name="athlete" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AsssistanceView" type="b2602c69:ProjectViewProjectNode" />
@@ -545,18 +589,18 @@
       <updated>1542743115062</updated>
       <workItem from="1542743118835" duration="756000" />
       <workItem from="1542745393483" duration="6067000" />
-      <workItem from="1542752224575" duration="2002000" />
+      <workItem from="1542752224575" duration="4934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8825000" />
+    <option name="totallyTimeSpent" value="11757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22767857" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -583,13 +627,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -606,9 +643,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/pages/groups-view/groups-view.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="338">
           <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -616,28 +660,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/groups.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vistas/src/data/group.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
+        <state relative-caret-position="-345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/coach.ts">
@@ -647,10 +672,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/groups/groups.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/athlete/athletes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/src/data/athlete.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <caret line="1" column="68" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/assistance.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/providers/assistances/assistance.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/src/data/schedule.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>

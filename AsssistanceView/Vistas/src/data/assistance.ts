@@ -1,5 +1,3 @@
 export class Assistance{
-    idAthlete: number;
-    idDate: number;
-    assisted: boolean;
+  constructor(assisted:boolean, idDate: Date,idAthlete: number){}
 }
