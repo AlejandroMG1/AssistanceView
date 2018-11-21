@@ -1,4 +1,8 @@
 export class Schedule{
-    id:number;
-    date: string;
+  date: string;
+  id: number;
+    constructor(id: number, date: string){
+    this.date = date;
+    this.id = id;
+    }
 }

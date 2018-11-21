@@ -9,7 +9,7 @@ export class AthletesProvider {
   }
 
   addAthlete(dni: number, name: string, idGroup: number) {
-    let athlete: Athlete = new Athlete(dni, name, this.athleteList.length, idGroup);
+    let athlete: Athlete = new Athlete(this.athleteList.length, dni, name, idGroup);
     this.athleteList.push(athlete);
   }
 
