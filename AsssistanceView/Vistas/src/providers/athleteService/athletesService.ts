@@ -10,7 +10,7 @@ export class AthletesProvider {
     let athlete: Athlete = new Athlete(dni, name, this.athleteList.length, idGroup);
     this.athleteList.push(athlete);
   }
-  getAthleteByIdGroup(id: number){
+  getAthletesByIdGroup(id: number){
     let athleteGroup: Athlete[];
     athleteGroup = this.athleteList.filter((data: Athlete) => {
       let athletes: Athlete[] = [];
