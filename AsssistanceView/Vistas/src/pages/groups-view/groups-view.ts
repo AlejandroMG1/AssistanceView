@@ -40,6 +40,6 @@ export class GroupsViewPage implements OnInit{
     }, 4000);
   }
   ngOnInit(){
-    this.groupList = groups;
+    this.groupList = this.groupsProvider.getGroupList();
   }
 }
