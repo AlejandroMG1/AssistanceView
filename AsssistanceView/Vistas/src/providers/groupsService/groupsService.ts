@@ -17,7 +17,13 @@ export class GroupsProvider {
   getGroup (id: number) {
     return this.groupList.findIndex((group) => {
       return group.id == id;
-    })
+    });
+  }
+  getGroupByName(name: string){
+    let groupIndex = this.groupList.findIndex((group) => {
+      return group.name == name;
+    });
+    return this.groupList[groupIndex];
   }
   editGroup (group: Group, id: number) {
     this.groupList[id] = group;
