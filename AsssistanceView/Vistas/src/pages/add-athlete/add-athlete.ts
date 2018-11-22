@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { GroupsProvider } from '../../providers/groupsService/groupsService';
+import { Group } from '../../data/group';
+import { AthletesProvider } from '../../providers/athleteService/athletesService'
 
 /**
  * Generated class for the AddAthletePage page.
@@ -15,11 +19,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AddAthletePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  private todo : FormGroup;
+  private groups : Group[];
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, private groupsProvider:GroupsProvider) {
+    this.groups=this.groupsProvider.getGroupList();
+    
+    this.todo = this.formBuilder.group({
+      dni: ['', Validators.required],
+      name: [''],
+      group: [''],
+    });
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddAthletePage');
   }
 
+  logForm(){
+    console.log(this.todo.value)
+  }
 }

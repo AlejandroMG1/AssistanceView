@@ -1,13 +1,16 @@
 <ion-menu [content]="nav">
     <ion-header>
-        <ion-toolbar>
+        <ion-toolbar color="primary">
             <ion-title>Menu</ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-content>
         <ion-list>
-            <button ion-item (click)="onLoad()">
+            <button ion-item>
                 <ion-icon name="" item-left></ion-icon>Generar informe por grupo
+            </button>
+            <button ion-item (click)="showAddAthlete()">
+                <ion-icon name="" item-left></ion-icon>Añadir Atleta
             </button>
         </ion-list>
     </ion-content>

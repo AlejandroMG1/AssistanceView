@@ -18,6 +18,7 @@ import { GroupsProvider } from '../providers/groupsService/groupsService';
 import { AthletesProvider } from '../providers/athleteService/athletesService';
 import { scheduleProvider } from '../providers/scheduleService/scheduleService';
 import { AssistanceProvider } from '../providers/assistancesService/assistanceService';
+import { AddGroupPage } from '../pages/add-group/add-group';
 
 let pages = [
   MyApp,
@@ -27,7 +28,8 @@ let pages = [
   GroupsViewPage,
   GroupSchedulePage,
   AthleteListPage,
-  AddAthletePage
+  AddAthletePage,
+  AddGroupPage
 ];
 
 @NgModule({

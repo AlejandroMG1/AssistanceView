@@ -41,32 +41,6 @@ export class AthleteListPage implements OnInit {
     console.log(this.assistanceReport.getAllAsistaceReport());
   }
 
-  openMenu() {
-    let actionSheet = this.actionsheetCtrl.create({
-      
-      cssClass: 'action-sheets-basic-page',
-      buttons: [
-        {
-          text: 'Borrar',
-          role: 'destructive',
-          icon: !this.platform.is('ios') ? 'trash' : null,
-          handler: () => {
-            console.log('Delete clicked');
-          }
-        },
-        {
-          text: 'Cancel',
-          role: 'cancel', // will always sort to be on the bottom
-          icon: !this.platform.is('ios') ? 'close' : null,
-          handler: () => {
-            console.log('Cancel clicked');
-          }
-        }
-      ]
-    });
-    actionSheet.present();
-  }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad AthleteListPage');
   }

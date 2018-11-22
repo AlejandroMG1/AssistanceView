@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>addAthlete</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,21 @@
 
 
 <ion-content padding>
-
+  <form [formGroup]="todo" (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label stacked>dni</ion-label>
+      <ion-input type="text" formControlName="dni"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>nombre</ion-label>
+      <ion-input formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Grupo</ion-label>
+      <ion-select [(ngModel)]="Grupos" okText="Okay" cancelText="cancelar" formControlName="group">
+        <ion-option *ngFor="let group of groups">{{group.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-button type="submit" [disabled]="!todo.valid">Añadir</button>
+  </form>
 </ion-content>
