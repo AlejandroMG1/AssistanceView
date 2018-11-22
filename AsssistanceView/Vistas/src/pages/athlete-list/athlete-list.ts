@@ -4,6 +4,7 @@ import { Athlete } from '../../data/athlete';
 import { Assistance } from '../../data/assistance';
 import { Schedule } from '../../data/schedule';
 import {AthletesProvider} from '../../providers/athleteService/athletesService'
+import {AssistanceProvider} from "../../providers/assistancesService/assistanceService";
 
 /**
  * Generated class for the AthleteListPage page.
@@ -33,8 +34,11 @@ export class AthleteListPage implements OnInit {
 
 
   constructor(public platform: Platform, public actionsheetCtrl: ActionSheetController,
-    public navCtrl: NavController, public navParams: NavParams, private athletesProvider:AthletesProvider) {
-
+              public navCtrl: NavController,
+              public navParams: NavParams,
+              private athletesProvider:AthletesProvider,
+              private assistanceReport: AssistanceProvider) {
+    console.log(this.assistanceReport.getAllAsistaceReport());
   }
 
   openMenu() {

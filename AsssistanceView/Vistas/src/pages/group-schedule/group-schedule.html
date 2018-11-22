@@ -5,9 +5,13 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar color = "primary">
     <ion-title>{{group.name}}</ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="addSchedule()">
+        <ion-icon name="md-add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>

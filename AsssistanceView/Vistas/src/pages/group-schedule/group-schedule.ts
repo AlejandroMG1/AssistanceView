@@ -5,6 +5,8 @@ import { Schedule } from '../../data/schedule';
 import { Athlete } from '../../data/athlete';
 import {} from '../../providers/scheduleService'
 import { scheduleProvider } from '../../providers/scheduleService/scheduleService';
+import {AssistanceProvider} from "../../providers/assistancesService/assistanceService";
+import {AthletesProvider} from "../../providers/athleteService/athletesService";
 
 /**
  * Generated class for the GroupSchedulePage page.
@@ -28,13 +30,11 @@ export class GroupSchedulePage implements OnInit {
   };
   schedules: Schedule[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private scheduleProvier:scheduleProvider) {
-    
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private scheduleProvier:scheduleProvider,
+              private assistanceProvider:AssistanceProvider,
+              private athleteProvider: AthletesProvider) {
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GroupSchedulePage');
-    console.log(this.schedules);
   }
 
   showGroupAthletes(schedule: Schedule){
@@ -42,7 +42,16 @@ export class GroupSchedulePage implements OnInit {
   }
   ngOnInit(){
     this.group = this.navParams.data;
-    this.schedules = this.scheduleProvier.getSchedule();
-    
+    this.schedules = this.scheduleProvier.getSchedulesByIdGroup(this.group.id);
+  }
+  addSchedule(){
+    let id = this.scheduleProvier.addSchedule(this.group.id);
+    this.schedules = this.scheduleProvier.getSchedulesByIdGroup(this.group.id);
+    if(id > 0){
+      this.createAssistanceReports(id);
+    }
+  }
+  createAssistanceReports(idSchedule: number){
+    this.assistanceProvider.addAllAssistanceReport(this.group.id, this.athleteProvider.getAthletesByIdGroup(this.group.id), this.scheduleProvier.getScheduleById(idSchedule).date);
   }
 }
