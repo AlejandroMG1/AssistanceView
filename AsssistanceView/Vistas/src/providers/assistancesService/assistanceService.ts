@@ -4,7 +4,7 @@ import {Athlete} from "../../data/athlete";
 export class AssistanceProvider {
   assistanceList: Assistance[] = [];
   addAssistanceReport(assisted: boolean, date: string, idAthlete: number){
-    let assistance = new Assistance(this.assistanceList.length,assisted, date, idAthlete);
+    let assistance = new Assistance(this.assistanceList.length+1,assisted, date, idAthlete);
     this.assistanceList.push(assistance);
   }
   getAssistanceReport(idReport){
@@ -13,7 +13,7 @@ export class AssistanceProvider {
     });
     return index;
   }
-  addAllAssistanceReport(idGroup: number, athletes: Athlete[], date:string){
+  addAllAssistanceReport(idGroup: number, athletes: Athlete[],   date :string){
     for(let athlete of athletes){
       this.addAssistanceReport(false, date, athlete.id);
     }

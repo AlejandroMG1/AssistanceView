@@ -7,11 +7,12 @@ export class GroupsProvider {
     this.groupList = groupDummy;
     console.log(this.groupList);
   }
-  addGroupList(groupList:  Group[]){
-    this.groupList = groupList;
-  }
   getGroupList() {
     return this.groupList;
+  }
+  addGroup(name: string){
+    let group: Group = new Group(this.groupList.length+1, name);
+    this.groupList.push(group);
   }
   getGroup (id: number) {
     return this.groupList.findIndex((group) => {
