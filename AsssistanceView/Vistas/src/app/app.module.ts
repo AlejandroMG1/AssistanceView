@@ -20,6 +20,7 @@ import { AssistanceProvider } from '../providers/assistancesService/assistanceSe
 import {GroupViewHistoricalPage} from "../pages/group-view-historical/group-view-historical";
 import {AthleteHistoricalListPage} from "../pages/athlete-historical-list/athlete-historical-list";
 import { AddGroupPage } from '../pages/add-group/add-group';
+import { AthleteHistoryPage } from '../pages/athlete-history/athlete-history';
 
 let pages = [
   MyApp,
@@ -31,7 +32,8 @@ let pages = [
   GroupSchedulePage,
   AthleteListPage,
   AddAthletePage,
-  AddGroupPage
+  AddGroupPage,
+  AthleteHistoryPage
 ];
 
 @NgModule({

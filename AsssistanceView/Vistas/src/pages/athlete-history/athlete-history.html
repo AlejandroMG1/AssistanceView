@@ -7,12 +7,25 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Athlete-history</ion-title>
+    <ion-title>{{athlete.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <h2>
+    Identificacion: {{athlete.dni}}
+  </h2>
+  <h2>
+    Porcentaje de asistencia ultimo mes: {{porcentajeAsisstance}}
+  </h2>
+  <h2>
+    Historial Total:
+  </h2>
+  <ion-list>
+      <button ion-item *ngFor="let assistance of asisstances">
+        <h2>{{assistance.date}}{{asistencia.assisted}}</h2>
+      </button>
+    </ion-list>
 </ion-content>

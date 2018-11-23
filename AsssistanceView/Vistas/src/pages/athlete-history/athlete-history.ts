@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Athlete } from '../../data/athlete';
+import { AssistanceCalculator } from '../../Logic/assistanceCalculator';
+import { Assistance } from '../../data/assistance';
+import { AssistanceProvider } from '../../providers/assistancesService/assistanceService';
 
 /**
  * Generated class for the AthleteHistoryPage page.
@@ -15,7 +19,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AthleteHistoryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  athlete: Athlete;
+  asisstances: Assistance[];
+  porcentajeAsisstance: number;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private assistanceProvider: AssistanceProvider, private calculator: AssistanceCalculator) {
+    this.athlete = navParams.data;
+    this.asisstances = assistanceProvider.getReportsByAthleteId(this.athlete.id)
+    this.porcentajeAsisstance = calculator.calculateAssistancePercentageByAthleteId(this.asisstances);
   }
 
   ionViewDidLoad() {
