@@ -18,6 +18,9 @@ import { GroupsProvider } from '../providers/groupsService/groupsService';
 import { AthletesProvider } from '../providers/athleteService/athletesService';
 import { scheduleProvider } from '../providers/scheduleService/scheduleService';
 import { AssistanceProvider } from '../providers/assistancesService/assistanceService';
+import { SQLite } from '@ionic-native/sqlite';
+import { Toast } from '@ionic-native/toast';
+import { HttpClientModule } from '@angular/common/http';
 
 let pages = [
   MyApp,
@@ -34,7 +37,8 @@ let pages = [
   declarations: pages,
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: pages,
@@ -42,7 +46,10 @@ let pages = [
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    GroupsProvider,AthletesProvider,scheduleProvider,AssistanceProvider
+    GroupsProvider,AthletesProvider,scheduleProvider,AssistanceProvider,
+    SQLite,
+    Toast,
+    
   ]
 })
 export class AppModule { }
