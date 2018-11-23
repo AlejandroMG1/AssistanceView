@@ -21,5 +21,8 @@ export class AssistanceProvider {
   getAllAsistaceReport(){
     return this.assistanceList;
   }
+  getReportsByAthleteId (id: number){
+    return this.assistanceList.filter(assistance => assistance.idAthlete === id);
+  }
 
 }

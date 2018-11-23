@@ -23,7 +23,7 @@ export class GroupsProvider {
     let groupIndex = this.groupList.findIndex((group) => {
       return group.name == name;
     });
-    return this.groupList[groupIndex];
+    return this.groupList[groupIndex].id;
   }
   editGroup (group: Group, id: number) {
     this.groupList[id] = group;
