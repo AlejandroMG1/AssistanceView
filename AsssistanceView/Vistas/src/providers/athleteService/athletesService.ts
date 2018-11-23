@@ -8,7 +8,7 @@ export class AthletesProvider {
   athleteList: Athlete[] = [];
 
   constructor(public http: HttpClient) {
-    this.athleteList = athleteDummy;
+    //this.athleteList = athleteDummy;
   }
 
   addAthlete(dni: number, name: string, idGroup: number) {
@@ -22,13 +22,13 @@ export class AthletesProvider {
   }
 
   getAthletesByIdGroup(id: number) {
-    /* let athleteGroup: Athlete[] = [];
-    for(let athlete of this.athleteList){
-      if(athlete.idGroup=== id){
+    let athleteGroup: Athlete[] = [];
+    for (let athlete of this.athleteList) {
+      if (athlete.idGroup === id) {
         athleteGroup.push(athlete);
       }
     }
-    return athleteGroup; */
-    return this.http.get<any>(API + '/atletas/');
+    return athleteGroup;
+    //return this.http.get<any>(API + '/atletas/');
   }
 }

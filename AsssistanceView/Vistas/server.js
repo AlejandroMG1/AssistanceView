@@ -8,7 +8,7 @@ require('./connection');
 const app = express();
 
 app.use(bodyParser.json());
-app.set('port', process.env.PORT || 8200);
+app.set('port', process.env.PORT || 8100);
 app.use(cors()); // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 app.use(express.static('www')); // Our Ionic app build is in the www folder (kept up-to-date by the Ionic CLI using 'ionic serve')
 
