@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Add-Group</ion-title>
+    <ion-title>Añadir Grupo</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,12 @@
 
 <ion-content padding>
 
+  <ion-content padding>
+    <form [formGroup]="todo">
+      <ion-item>
+        <ion-label stacked>nombre</ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" [disabled]="!todo.valid" (click)="addGroup()">Añadir</button>
+    </form>
 </ion-content>

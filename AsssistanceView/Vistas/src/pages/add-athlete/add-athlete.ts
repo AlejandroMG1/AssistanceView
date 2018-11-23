@@ -44,7 +44,8 @@ export class AddAthletePage {
   addAthlete(){
     let id=this.groupsProvider.getGroupByName(this.todo.get("group").value);
     this.athletesProvider.addAthlete(this.todo.get("dni").value,this.todo.get("name").value,id);
-    console.log(this.athletesProvider.getAthletesByIdGroup(2));
+    console.log(this.athletesProvider.getAthletesByIdGroup(id));
+    console.log(this.athletesProvider.athleteList)
     this.navCtrl.pop();
   }
 }

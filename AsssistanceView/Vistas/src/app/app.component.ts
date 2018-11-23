@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { AddAthletePage } from '../pages/add-athlete/add-athlete';
+import { AddGroupPage } from '../pages/add-group/add-group';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,4 +27,10 @@ export class MyApp {
     this.navCtrl.push(AddAthletePage);
     this.menuCtrl.close();
   }
+
+  showAddGroup(){
+    this.navCtrl.push(AddGroupPage);
+    this.menuCtrl.close();
+  }
+
 }
