@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-
-import { ContactPage } from '../contact/contact';
 import { GroupsViewPage } from '../groups-view/groups-view';
+import {GroupViewHistoricalPage} from "../group-view-historical/group-view-historical";
 
 @Component({
   templateUrl: 'tabs.html'
@@ -9,7 +8,7 @@ import { GroupsViewPage } from '../groups-view/groups-view';
 export class TabsPage {
 
   tab1Root = GroupsViewPage;
-  tab3Root = ContactPage;
+  tab2Root = GroupViewHistoricalPage;
 
   constructor() {
 

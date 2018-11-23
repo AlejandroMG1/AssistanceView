@@ -17,12 +17,16 @@ import { GroupsProvider } from '../providers/groupsService/groupsService';
 import { AthletesProvider } from '../providers/athleteService/athletesService';
 import { scheduleProvider } from '../providers/scheduleService/scheduleService';
 import { AssistanceProvider } from '../providers/assistancesService/assistanceService';
+import {GroupViewHistoricalPage} from "../pages/group-view-historical/group-view-historical";
+import {AthleteHistoricalListPage} from "../pages/athlete-historical-list/athlete-historical-list";
 import { AddGroupPage } from '../pages/add-group/add-group';
 
 let pages = [
   MyApp,
+  GroupViewHistoricalPage,
   ContactPage,
   TabsPage,
+  AthleteHistoricalListPage,
   GroupsViewPage,
   GroupSchedulePage,
   AthleteListPage,
