@@ -1,4 +1,4 @@
-import { Component, group } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';

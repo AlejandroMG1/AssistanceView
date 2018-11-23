@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color = "primary">
-    <ion-title>{{gropName}}</ion-title>
+    <ion-title>{{date.date}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,9 +15,9 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let athlete of athletes">
+    <ion-item *ngFor="let athlete of athletes; index as i">
       <ion-label>{{athlete.name}}</ion-label>
-      <ion-toggle color="danger" *ngIf="!athleteAssisted(athlete)"></ion-toggle>
+      <ion-toggle color="danger" [(ngModel)]="assistances[i].assisted"  (ionChange)="athleteAssisted(i)"></ion-toggle>
     </ion-item>
   </ion-list>
 </ion-content>
