@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GroupsViewPage } from '../pages/groups-view/groups-view';
@@ -22,7 +21,6 @@ import { AddGroupPage } from '../pages/add-group/add-group';
 
 let pages = [
   MyApp,
-  AboutPage,
   ContactPage,
   TabsPage,
   GroupsViewPage,

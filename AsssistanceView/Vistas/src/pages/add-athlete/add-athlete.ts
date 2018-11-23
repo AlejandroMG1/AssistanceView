@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, group } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
@@ -22,7 +22,8 @@ export class AddAthletePage {
   private todo : FormGroup;
   private groups : Group[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, private groupsProvider:GroupsProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, 
+    private groupsProvider:GroupsProvider, private athletesProvider:AthletesProvider) {
     this.groups=this.groupsProvider.getGroupList();
     
     this.todo = this.formBuilder.group({
@@ -37,6 +38,13 @@ export class AddAthletePage {
   }
 
   logForm(){
-    console.log(this.todo.value)
+    console.log(this.todo.get("group").value)
+  }
+
+  addAthlete(){
+    let id=this.groupsProvider.getGroupByName(this.todo.get("group").value);
+    this.athletesProvider.addAthlete(this.todo.get("dni").value,this.todo.get("name").value,id);
+    console.log(this.athletesProvider.getAthletesByIdGroup(2));
+    this.navCtrl.pop();
   }
 }

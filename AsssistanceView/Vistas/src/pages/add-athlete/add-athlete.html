@@ -17,7 +17,7 @@
   <form [formGroup]="todo" (ngSubmit)="logForm()">
     <ion-item>
       <ion-label stacked>dni</ion-label>
-      <ion-input type="text" formControlName="dni"></ion-input>
+      <ion-input type="number" formControlName="dni"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>nombre</ion-label>
@@ -29,6 +29,6 @@
         <ion-option *ngFor="let group of groups">{{group.name}}</ion-option>
       </ion-select>
     </ion-item>
-    <button ion-button type="submit" [disabled]="!todo.valid">Añadir</button>
+    <button ion-button type="submit" [disabled]="!todo.valid" (click)="addAthlete()">Añadir</button>
   </form>
 </ion-content>
