@@ -13,6 +13,9 @@ export class AssistanceProvider {
     });
     return index;
   }
+  setAssistedInReport(idReport: number, assisted: boolean){
+    this.assistanceList[idReport].assisted = assisted;
+  }
   addAllAssistanceReport(idGroup: number, athletes: Athlete[],   date :string){
     for(let athlete of athletes){
       this.addAssistanceReport(false, date, athlete.id);
@@ -23,6 +26,9 @@ export class AssistanceProvider {
   }
   getReportsByAthleteId (id: number){
     return this.assistanceList.filter(assistance => assistance.idAthlete === id);
+  }
+  getIdReportByScheduleIdAthleteId(date: string, idAthlete: number): number{
+    return this.assistanceList.findIndex(assistance => assistance.idAthlete === idAthlete && assistance.date === date);
   }
 
 }
