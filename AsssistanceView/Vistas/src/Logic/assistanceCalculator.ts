@@ -14,6 +14,6 @@ export class AssistanceCalculator {
     let lenghtAssistances = filteredTotalAssistance.length;
     let filteredAssistedDays = filteredTotalAssistance.filter(assistance => assistance.assisted === false);
     let lenghtAssistedDays = filteredAssistedDays.length;
-    return lenghtAssistedDays/lenghtAssistances;
+    return lenghtAssistedDays/lenghtAssistances*100;
   }
 }

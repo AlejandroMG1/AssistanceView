@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Schedule } from '../../data/schedule';
-import { Athlete } from '../../data/athlete';
 import { GroupSchedulePage } from '../group-schedule/group-schedule';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import {Group} from "../../data/group";
