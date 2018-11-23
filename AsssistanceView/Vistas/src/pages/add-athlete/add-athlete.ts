@@ -11,15 +11,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-add-athlete',
-  templateUrl: 'add-athlete.html',
+  templateUrl: 'add-athlete.html'
 })
 export class AddAthletePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddAthletePage');
   }
-
 }
