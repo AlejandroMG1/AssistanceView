@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AthleteListPage } from '../athlete-list/athlete-list';
 import { Schedule } from '../../data/schedule';
 import { Athlete } from '../../data/athlete';
-import {} from '../../providers/scheduleService'
 import { scheduleProvider } from '../../providers/scheduleService/scheduleService';
 import {AssistanceProvider} from "../../providers/assistancesService/assistanceService";
 import {AthletesProvider} from "../../providers/athleteService/athletesService";

@@ -21,11 +21,11 @@
     Porcentaje de asistencia ultimo mes: {{porcentajeAsisstance}}
   </h2>
   <h2>
-    Historial Total:
+    Historial Total de faltas:
   </h2>
   <ion-list>
       <button ion-item *ngFor="let assistance of asisstances">
-        <h2>{{assistance.date}}{{asistencia.assisted}}</h2>
+        <h2 *ngIf="assistance.assisted">{{assistance.date}}</h2>
       </button>
     </ion-list>
 </ion-content>

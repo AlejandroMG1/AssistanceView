@@ -4,6 +4,7 @@ import { AthletesProvider } from "../../providers/athleteService/athletesService
 import { AssistanceProvider } from "../../providers/assistancesService/assistanceService";
 import { Athlete } from "../../data/athlete";
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
+import { AthleteHistoryPage } from '../athlete-history/athlete-history';
 
 /**
  * Generated class for the AthleteHistoricalListPage page.
@@ -24,11 +25,14 @@ export class AthleteHistoricalListPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private athletesProvider: AthletesProvider,
-    private assistanceReport: AssistanceProvider,
     private groupsProvider: GroupsProvider) {
     let idGroup = this.navParams.get("idGroup");
     this.athletes = this.athletesProvider.getAthletesByIdGroup(idGroup);
     this.groupName =groupsProvider.getGroup(idGroup);
+  }
+
+  showAthleteHistory(athlete:Athlete){
+    this.navCtrl.push(AthleteHistoryPage,{a: athlete});
   }
 
   ionViewDidLoad() {
