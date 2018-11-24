@@ -2,15 +2,13 @@ import { Athlete } from '../../data/athlete';
 import athleteDummy from '../../data/dummy/athleteDummy';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-// const API: string = 'http://localhost:8200';
+const API: string = 'http://localhost:8200';
 
 @Injectable()
 export class AthletesProvider {
   athleteList: Athlete[] = [];
 
-  constructor(public http: HttpClient) {
-    this.athleteList = athleteDummy;
-  }
+  constructor(public http: HttpClient) {}
 
   addAthlete(dni: number, name: string, idGroup: number) {
     let athlete: Athlete = new Athlete(
@@ -23,7 +21,7 @@ export class AthletesProvider {
   }
 
   getAthletesByIdGroup(id: number) {
-    return this.http.get('localhost:8200/athletes', {
+    return this.http.get<Athlete[]>(API + '/athletes', {
       params: new HttpParams().set('idGroup', id.toString())
     });
   }

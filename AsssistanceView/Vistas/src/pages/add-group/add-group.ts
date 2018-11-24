@@ -13,27 +13,29 @@ import { GroupsProvider } from '../../providers/groupsService/groupsService';
 @IonicPage()
 @Component({
   selector: 'page-add-group',
-  templateUrl: 'add-group.html',
+  templateUrl: 'add-group.html'
 })
 export class AddGroupPage {
+  private todo: FormGroup;
 
-  private todo : FormGroup;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, 
-    private groupsProvider:GroupsProvider) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private formBuilder: FormBuilder,
+    private groupsProvider: GroupsProvider
+  ) {
     this.todo = this.formBuilder.group({
       name: ['', Validators.required]
     });
   }
 
-  addGroup(){
+  /* addGroup(){
     this.groupsProvider.addGroup(this.todo.get("name").value)
     this.groupsProvider.getGroupList();
     this.navCtrl.pop();
-  }
+  } */
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddGroupPage');
   }
-
 }

@@ -4,6 +4,7 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import { Group } from '../../data/group';
 import { AthletesProvider } from '../../providers/athleteService/athletesService';
+import { Observable } from 'rxjs';
 
 /**
  * Generated class for the AddAthletePage page.
@@ -19,7 +20,8 @@ import { AthletesProvider } from '../../providers/athleteService/athletesService
 })
 export class AddAthletePage {
   private todo: FormGroup;
-  private groups: Group[];
+  private groups$: Group[];
+  groupId: number;
 
   constructor(
     public navCtrl: NavController,
@@ -28,7 +30,7 @@ export class AddAthletePage {
     private groupsProvider: GroupsProvider,
     private athletesProvider: AthletesProvider
   ) {
-    this.groups = this.groupsProvider.getGroupList();
+    this.groups$ = this.groupsProvider.getGroup(this.groupId);
 
     this.todo = this.formBuilder.group({
       dni: ['', Validators.required],
@@ -45,7 +47,7 @@ export class AddAthletePage {
     console.log(this.todo.get('group').value);
   }
 
-  addAthlete() {
+  /* addAthlete() {
     let id = this.groupsProvider.getGroupByName(this.todo.get('group').value);
     this.athletesProvider.addAthlete(
       this.todo.get('dni').value,
@@ -53,5 +55,5 @@ export class AddAthletePage {
       id
     );
     this.navCtrl.pop();
-  }
+  } */
 }

@@ -10,6 +10,7 @@ import { Assistance } from '../../data/assistance';
 import { Schedule } from '../../data/schedule';
 import { AthletesProvider } from '../../providers/athleteService/athletesService';
 import { AssistanceProvider } from '../../providers/assistancesService/assistanceService';
+import { Observable } from 'rxjs/Observable';
 
 /**
  * Generated class for the AthleteListPage page.
@@ -25,7 +26,7 @@ import { AssistanceProvider } from '../../providers/assistancesService/assistanc
 })
 export class AthleteListPage implements OnInit {
   groupId: number;
-  athletes: Athlete[];
+  athletes$: Observable<Athlete[]>;
   date: Schedule;
   assistances: Assistance[];
 
@@ -33,21 +34,15 @@ export class AthleteListPage implements OnInit {
     public platform: Platform,
     public actionsheetCtrl: ActionSheetController,
     public navParams: NavParams,
-    private athletesProvider: AthletesProvider,
-    private assistanceReport: AssistanceProvider
-  ) {
-    console.log(this.assistanceReport.getAllAsistaceReport());
+    private athletesProvider: AthletesProvider
+  ) //private assistanceReport: AssistanceProvider
+  {
+    //console.log(this.assistanceReport.getAllAsistaceReport());
   }
 
   ngOnInit() {
     this.groupId = this.navParams.get('groupId');
-    this.athletes = this.athletesProvider.getAthletesByIdGroup(this.groupId);
-    this.date = this.navParams.get('date');
-    console.log(this.date);
-    this.assistances = this.assistanceReport.getIdReportByScheduleId(
-      this.date.date,
-      this.groupId
-    );
+    this.athletes$ = this.athletesProvider.getAthletesByIdGroup(this.groupId);
   }
 
   ionViewDidLoad() {}

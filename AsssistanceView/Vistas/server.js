@@ -1,4 +1,3 @@
-//server.js (todo-ionic2-heroku/server.js)
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -13,7 +12,7 @@ app.use(cors()); // CORS (Cross-Origin Resource Sharing) headers to support Cros
 app.use(express.static('www')); // Our Ionic app build is in the www folder (kept up-to-date by the Ionic CLI using 'ionic serve')
 
 connect(function(err, client) {
-  const db = client.db();
+  const db = client.db('club_baloncesto');
 
   if (err) {
     return console.error(err);
@@ -73,6 +72,56 @@ connect(function(err, client) {
     );
   });
 
+  const insertAthletes = function(db) {
+    // Get the documents collection
+    const collection = db.collection('athletes');
+    // Insert some documents
+    collection.insertOne(
+      {
+        idAthlete: '123',
+        assisted: false,
+        date: '2016-05-18 05:00:00.000+00:00',
+        grupo: 1
+      },
+      function(err, result) {
+        console.log('Inserted 1 documents into the collection');
+      }
+    );
+  };
+
+  const insertGroups = function(db) {
+    // Get the documents collection
+    const collection = db.collection('groups');
+    // Insert some documents
+    collection.insertOne(
+      {
+        idAthlete: '123',
+        assisted: false,
+        date: '2016-05-18 05:00:00.000+00:00',
+        grupo: 1
+      },
+      function(err, result) {
+        console.log('Inserted 1 documents into the collection');
+      }
+    );
+  };
+
+  const insertAssistance = function(db) {
+    // Get the documents collection
+    const collection = db.collection('assistance');
+    // Insert some documents
+    collection.insertOne(
+      {
+        idAthlete: '123',
+        assisted: false,
+        date: '2016-05-18 05:00:00.000+00:00',
+        grupo: 1
+      },
+      function(err, result) {
+        console.log('Inserted 1 documents into the collection');
+      }
+    );
+  };
   app.listen(app.get('port'), function() {
     console.log(
       "You're a wizard, Harry. I'm a what? Yes, a wizard, on port",

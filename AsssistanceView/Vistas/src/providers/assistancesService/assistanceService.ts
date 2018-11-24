@@ -1,14 +1,25 @@
-import { Assistance } from "../../data/assistance";
-import { Athlete } from "../../data/athlete";
-import assistanceDummy from "../../data/dummy/assistanceDummy";
+import { Assistance } from '../../data/assistance';
+import { Athlete } from '../../data/athlete';
+import assistanceDummy from '../../data/dummy/assistanceDummy';
 
 export class AssistanceProvider {
   assistanceList: Assistance[] = [];
-  constructor(){
+  constructor() {
     //this.assistanceList = assistanceDummy;
   }
-  addAssistanceReport(assisted: boolean, date: string, idAthlete: number, idGroup: number) {
-    let assistance = new Assistance(this.assistanceList.length + 1, assisted, date, idAthlete, idGroup);
+  addAssistanceReport(
+    assisted: boolean,
+    date: string,
+    idAthlete: number,
+    idGroup: number
+  ) {
+    let assistance = new Assistance(
+      this.assistanceList.length + 1,
+      assisted,
+      date,
+      idAthlete,
+      idGroup
+    );
     this.assistanceList.push(assistance);
   }
   getAssistanceReport(idReport) {
@@ -20,7 +31,7 @@ export class AssistanceProvider {
   setAssistedInReport(idReport: number, assisted: boolean) {
     this.assistanceList[idReport].assisted = assisted;
   }
-  addAllAssistanceReport(idGroup: number, athletes: Athlete[], date: string) {
+  /* addAllAssistanceReport(idGroup: number, athletes: Athlete[], date: string) {
     for (let athlete of athletes) {
       this.addAssistanceReport(false, date, athlete.id, idGroup);
     }
@@ -43,6 +54,5 @@ export class AssistanceProvider {
     }
 
     return assistances;
-  }
-
+  }*/
 }

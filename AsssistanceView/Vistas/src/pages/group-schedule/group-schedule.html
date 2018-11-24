@@ -6,16 +6,18 @@
 -->
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>{{group.name}}</ion-title>
+    <ion-title>{{ group.name }}</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let schedule of schedules" (click)="showGroupAthletes(schedule)">
-      <h2>{{schedule.date}}</h2>
+    <button
+      ion-item
+      *ngFor="let schedule of (schedule$ | async)"
+      (click)="showGroupAthletes(schedule)"
+    >
+      <h2>{{ schedule.date }}</h2>
     </button>
   </ion-list>
   <ion-fab right bottom>
@@ -23,5 +25,4 @@
       <ion-icon name="md-add"></ion-icon>
     </button>
   </ion-fab>
-
 </ion-content>
