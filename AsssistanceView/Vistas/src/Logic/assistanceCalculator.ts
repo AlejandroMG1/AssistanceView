@@ -4,16 +4,16 @@ import {AssistanceDateManagement} from "./assistanceDatesManagement/assistanceDa
 export class AssistanceCalculator {
   constructor(){
   }
-  calculateAssistancePercentageByAthleteId(assistanceListById: Assistance[]){
-    if(assistanceListById.length == 0){
+  calculateAssistancePercentage(assistanceList: Assistance[]){
+    if(assistanceList.length == 0){
       return 100;
     }
-    let assistanceDateManager = new AssistanceDateManagement(assistanceListById);
+    let assistanceDateManager = new AssistanceDateManagement(assistanceList);
     let year: string = new Date().getFullYear().toString();
     let month: string  = new Date().getMonth().toString();
 
     console.log(year);
-    let filteredTotalAssistance = assistanceListById.filter(assistance => {
+    let filteredTotalAssistance = assistanceList.filter(assistance => {
 
       return assistance.date.substring(3,5) === month && assistance.date.substring(7,11);
     });

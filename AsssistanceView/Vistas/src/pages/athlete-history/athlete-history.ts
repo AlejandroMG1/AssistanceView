@@ -27,8 +27,7 @@ export class AthleteHistoryPage {
     this.athlete = this.navParams.get("a");
     this.assistances = assistanceProvider.getReportsByAthleteId(this.athlete.id);
     this.calculadora = new AssistanceCalculator();
-    this.percentageAssistance = this.calculadora.calculateAssistancePercentageByAthleteId(this.assistances);
-    console.log(this.calculadora.calculateAssistancePercentageByAthleteId(this.assistances));
+    this.percentageAssistance = this.calculadora.calculateAssistancePercentage(this.assistances);
 
   }
 

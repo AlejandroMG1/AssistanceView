@@ -5,6 +5,8 @@ import { AssistanceProvider } from "../../providers/assistancesService/assistanc
 import { Athlete } from "../../data/athlete";
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import { AthleteHistoryPage } from '../athlete-history/athlete-history';
+import {AssistanceCalculator} from "../../Logic/assistanceCalculator";
+import {Group} from "../../data/group";
 
 /**
  * Generated class for the AthleteHistoricalListPage page.
@@ -21,14 +23,18 @@ import { AthleteHistoryPage } from '../athlete-history/athlete-history';
 export class AthleteHistoricalListPage {
 
   athletes: Athlete[] = [];
-  groupName;
+  groupName: string;
+  assistencePercentage: number;
   constructor(public navCtrl: NavController,
-    public navParams: NavParams,
-    private athletesProvider: AthletesProvider,
-    private groupsProvider: GroupsProvider) {
-    let idGroup = this.navParams.get("idGroup");
-    this.athletes = this.athletesProvider.getAthletesByIdGroup(idGroup);
-    this.groupName =groupsProvider.getGroup(idGroup);
+              public navParams: NavParams,
+              private athletesProvider: AthletesProvider,
+              private groupsProvider: GroupsProvider,
+              private  assistanceProvider: AssistanceProvider) {
+    let calculadora = new AssistanceCalculator();
+    let group: Group = this.navParams.get("group");
+    this.athletes = this.athletesProvider.getAthletesByIdGroup(group.id);
+    this.assistencePercentage = calculadora.calculateAssistancePercentage(this.assistanceProvider.getAssistancesReportByIdGroup(group.id));
+    this.groupName = group.name;
   }
 
   showAthleteHistory(athlete:Athlete){

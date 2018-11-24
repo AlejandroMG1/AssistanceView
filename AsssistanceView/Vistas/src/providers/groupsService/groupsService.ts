@@ -14,9 +14,7 @@ export class GroupsProvider {
     this.groupList.push(group);
   }
   getGroup (id: number) {
-    return this.groupList.findIndex((group) => {
-      return group.id == id;
-    });
+    return this.groupList[id];
   }
   getGroupByName(name: string){
     let groupIndex = this.groupList.findIndex((group) => {

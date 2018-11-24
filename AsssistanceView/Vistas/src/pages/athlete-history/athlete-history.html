@@ -14,12 +14,18 @@
 
 
 <ion-content padding>
-  <h2>
-    Identificacion: {{athlete.dni}}
-  </h2>
-  <h2>
-    Porcentaje de asistencia ultimo mes: {{percentageAssistance}}
-  </h2>
+  <h2>Informacion:</h2>
+  <ion-card>
+    <ion-card-content>
+      <h2>
+        Identificacion: {{athlete.dni}}
+      </h2>
+      <h2>
+        Porcentaje de asistencia ultimo mes: {{percentageAssistance.toFixed(2)}}%
+      </h2>
+
+    </ion-card-content>
+  </ion-card>
   <h2>
     Historial Total de faltas:
   </h2>

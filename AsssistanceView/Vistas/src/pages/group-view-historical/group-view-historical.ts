@@ -25,8 +25,8 @@ export class GroupViewHistoricalPage implements OnInit{
     console.log(this.groupList);
 
   }
-  onLoadList(id: number){
-    this.navCtrl.push(AthleteHistoricalListPage, {idGroup: id});
+  onLoadList(group: Group){
+    this.navCtrl.push(AthleteHistoricalListPage, {group: group});
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad GroupViewHistoricalPage');

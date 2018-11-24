@@ -28,8 +28,8 @@ export class AddAthletePage {
     
     this.todo = this.formBuilder.group({
       dni: ['', Validators.required],
-      name: [''],
-      group: [''],
+      name: ['',Validators.required],
+      group: ['',Validators.required],
     });
   }
 

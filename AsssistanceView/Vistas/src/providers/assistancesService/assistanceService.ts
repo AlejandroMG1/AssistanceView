@@ -44,5 +44,11 @@ export class AssistanceProvider {
 
     return assistances;
   }
+  getAssistancesReportByIdGroup(id: number): Assistance[]{
+    let assistances: Assistance[] = [];
+    return this.assistanceList.filter(assistance => {
+      return assistance.idGroup === id;
+    });
+  }
 
 }

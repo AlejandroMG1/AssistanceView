@@ -1,13 +1,18 @@
 <ion-header>
 
-  <ion-navbar color = "primary">
-    <ion-title>{{gropName}}</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>{{groupName}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+  <ion-card>
+    <ion-card-content>
+      Porcentaje de asistencias: {{assistencePercentage.toFixed(2)}}%
+    </ion-card-content>
+  </ion-card>
   <ion-list>
     <ion-item *ngFor="let athlete of athletes" (click)="showAthleteHistory(athlete)">
       <ion-label>
