@@ -52,8 +52,6 @@ export class AddAthletePage {
       this.todo.get('name').value,
       id
     );
-    console.log(this.athletesProvider.getAthletesByIdGroup(id));
-    console.log(this.athletesProvider.athleteList);
     this.navCtrl.pop();
   }
 }

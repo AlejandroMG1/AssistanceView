@@ -21,17 +21,53 @@ connect(function(err, client) {
 
   app.get('/athletes', async function(req, res) {
     console.log(req.query);
-    if (req.query.groupId) {
+    if (req.query.idGroup) {
       return res.json(
         await db
           .collection('athletes')
-          .find({ grupo: +req.query.groupId })
+          .find({ idGroup: +req.query.idGroup })
           .toArray()
       );
     }
     return res.json(
       await db
         .collection('athletes')
+        .find({})
+        .toArray()
+    );
+  });
+
+  app.get('/groups', async function(req, res) {
+    console.log(req.query);
+    return res.json(
+      await db
+        .collection('groups')
+        .find({})
+        .toArray()
+    );
+  });
+
+  app.get('/assistance', async function(req, res) {
+    console.log(req.query);
+    if (req.query.idGroup) {
+      return res.json(
+        await db
+          .collection('assistance')
+          .find({ idGroup: +req.query.idGroup })
+          .toArray()
+      );
+    }
+    if (req.query.idAthlete) {
+      return res.json(
+        await db
+          .collection('assistance')
+          .find({ idAthlete: +req.query.idAthlete })
+          .toArray()
+      );
+    }
+    return res.json(
+      await db
+        .collection('assistance')
         .find({})
         .toArray()
     );
