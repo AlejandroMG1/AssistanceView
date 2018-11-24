@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import { Group } from '../../data/group';
-import { AthletesProvider } from '../../providers/athleteService/athletesService'
+import { AthletesProvider } from '../../providers/athleteService/athletesService';
 
 /**
  * Generated class for the AddAthletePage page.
@@ -15,21 +15,25 @@ import { AthletesProvider } from '../../providers/athleteService/athletesService
 @IonicPage()
 @Component({
   selector: 'page-add-athlete',
-  templateUrl: 'add-athlete.html',
+  templateUrl: 'add-athlete.html'
 })
 export class AddAthletePage {
+  private todo: FormGroup;
+  private groups: Group[];
 
-  private todo : FormGroup;
-  private groups : Group[];
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private formBuilder: FormBuilder,
+    private groupsProvider: GroupsProvider,
+    private athletesProvider: AthletesProvider
+  ) {
+    this.groups = this.groupsProvider.getGroupList();
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, 
-    private groupsProvider:GroupsProvider, private athletesProvider:AthletesProvider) {
-    this.groups=this.groupsProvider.getGroupList();
-    
     this.todo = this.formBuilder.group({
       dni: ['', Validators.required],
       name: [''],
-      group: [''],
+      group: ['']
     });
   }
 
@@ -37,15 +41,19 @@ export class AddAthletePage {
     console.log('ionViewDidLoad AddAthletePage');
   }
 
-  logForm(){
-    console.log(this.todo.get("group").value)
+  logForm() {
+    console.log(this.todo.get('group').value);
   }
 
-  addAthlete(){
-    let id=this.groupsProvider.getGroupByName(this.todo.get("group").value);
-    this.athletesProvider.addAthlete(this.todo.get("dni").value,this.todo.get("name").value,id);
+  addAthlete() {
+    let id = this.groupsProvider.getGroupByName(this.todo.get('group').value);
+    this.athletesProvider.addAthlete(
+      this.todo.get('dni').value,
+      this.todo.get('name').value,
+      id
+    );
     console.log(this.athletesProvider.getAthletesByIdGroup(id));
-    console.log(this.athletesProvider.athleteList)
+    console.log(this.athletesProvider.athleteList);
     this.navCtrl.pop();
   }
 }

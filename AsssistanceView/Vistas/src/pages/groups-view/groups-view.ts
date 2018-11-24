@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { GroupSchedulePage } from '../group-schedule/group-schedule';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import {Group} from "../../data/group";
-
 /**
  * Generated class for the GroupsViewPage page.
  *
@@ -24,7 +23,8 @@ export class GroupsViewPage implements OnInit{
   groupList : Group[];
   GroupSchedulePage = GroupSchedulePage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private groupsProvider: GroupsProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private groupsProvider: GroupsProvider,
+    ) {
     this.tabBarElement = document.querySelector('.tabbar');
     this.groupList = this.groupsProvider.getGroupList();
   }
@@ -39,4 +39,7 @@ export class GroupsViewPage implements OnInit{
   ngOnInit(){
     
   }
+
+  llamadoabddd(){}
+
 }

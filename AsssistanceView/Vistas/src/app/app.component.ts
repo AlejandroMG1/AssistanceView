@@ -12,9 +12,14 @@ import { AddGroupPage } from '../pages/add-group/add-group';
 })
 export class MyApp {
   @ViewChild('nav') navCtrl: NavController;
-  rootPage:any = TabsPage;
+  rootPage: any = TabsPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private menuCtrl: MenuController) {
+  constructor(
+    platform: Platform,
+    statusBar: StatusBar,
+    splashScreen: SplashScreen,
+    private menuCtrl: MenuController
+  ) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -23,14 +28,13 @@ export class MyApp {
     });
   }
 
-  showAddAthlete(){
+  showAddAthlete() {
     this.navCtrl.push(AddAthletePage);
     this.menuCtrl.close();
   }
 
-  showAddGroup(){
+  showAddGroup() {
     this.navCtrl.push(AddGroupPage);
     this.menuCtrl.close();
   }
-
 }
