@@ -1,9 +1,8 @@
-
 import { Athlete } from '../../data/athlete';
 import athleteDummy from '../../data/dummy/athleteDummy';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-const API: string = 'http://localhost:8200';
+// const API: string = 'http://localhost:8200';
 
 @Injectable()
 export class AthletesProvider {
@@ -24,14 +23,14 @@ export class AthletesProvider {
   }
 
   getAthletesByIdGroup(id: number) {
-     let athleteGroup: Athlete[] = [];
-    for(let athlete of this.athleteList){
-      if(athlete.idGroup=== id){
+    let athleteGroup: Athlete[] = [];
+    for (let athlete of this.athleteList) {
+      if (athlete.idGroup === id) {
         athleteGroup.push(athlete);
       }
     }
-    
-    let arrei = this.http.get<any[]>(API + '/atletas/');
-    return athleteGroup; 
+
+    // let arrei = this.http.get<any[]>(API + '/atletas/');
+    return athleteGroup;
   }
 }

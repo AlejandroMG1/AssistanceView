@@ -1,11 +1,6 @@
 import {Schedule} from "../../data/schedule";
 import scheduleDummy from "../../data/dummy/scheduleDummy";
-import {Observable} from "rxjs/Observable";
 import 'rxjs/add/observable/from';
-import {map, filter, toArray} from "rxjs/operators";
-import {Group} from "../../data/group";
-import {Athlete} from "../../data/athlete";
-import {AssistanceProvider} from "../assistancesService/assistanceService";
 
 export class scheduleProvider {
   private scheduleList: Schedule[];

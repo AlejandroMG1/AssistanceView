@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Platform, ActionSheetController, IonicPage, NavController, NavParams } from 'ionic-angular';
+import {
+  Platform,
+  ActionSheetController,
+  IonicPage,
+  NavParams
+} from 'ionic-angular';
 import { Athlete } from '../../data/athlete';
 import { Assistance } from '../../data/assistance';
 import { Schedule } from '../../data/schedule';
-import {AthletesProvider} from '../../providers/athleteService/athletesService'
-import {AssistanceProvider} from "../../providers/assistancesService/assistanceService";
+import { AthletesProvider } from '../../providers/athleteService/athletesService';
+import { AssistanceProvider } from '../../providers/assistancesService/assistanceService';
 
 /**
  * Generated class for the AthleteListPage page.
@@ -16,34 +21,33 @@ import {AssistanceProvider} from "../../providers/assistancesService/assistanceS
 @IonicPage()
 @Component({
   selector: 'page-athlete-list',
-  templateUrl: 'athlete-list.html',
+  templateUrl: 'athlete-list.html'
 })
 export class AthleteListPage implements OnInit {
-
-  ngOnInit() {
-    this.groupId = this.navParams.get("groupId");
-    this.athletes=this.athletesProvider.getAthletesByIdGroup(this.groupId);
-    this.date = this.navParams.get("date");
-    console.log(this.date);
-  }
-
   groupId: number;
   athletes: Athlete[];
   date: Schedule;
   assistance: Assistance;
 
-
-  constructor(public platform: Platform, public actionsheetCtrl: ActionSheetController,
-              public navCtrl: NavController,
-              public navParams: NavParams,
-              private athletesProvider:AthletesProvider,
-              private assistanceReport: AssistanceProvider) {
+  constructor(
+    public platform: Platform,
+    public actionsheetCtrl: ActionSheetController,
+    public navParams: NavParams,
+    private athletesProvider: AthletesProvider,
+    private assistanceReport: AssistanceProvider
+  ) {
     console.log(this.assistanceReport.getAllAsistaceReport());
+  }
+
+  ngOnInit() {
+    this.groupId = this.navParams.get('groupId');
+    this.athletes = this.athletesProvider.getAthletesByIdGroup(this.groupId);
+    this.date = this.navParams.get('date');
+    console.log(this.date);
   }
 
   openMenu() {
     let actionSheet = this.actionsheetCtrl.create({
-      
       cssClass: 'action-sheets-basic-page',
       buttons: [
         {
@@ -71,10 +75,5 @@ export class AthleteListPage implements OnInit {
     console.log('ionViewDidLoad AthleteListPage');
   }
 
-
-
-  athleteAssisted(athlete: Athlete) {
-
-  }
-
+  athleteAssisted(athlete: Athlete) {}
 }

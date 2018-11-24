@@ -1,0 +1,23 @@
+{
+  "name": "dbconn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0vat0/backend_dragones.git"
+  },
+  "author": "n0vat0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n0vat0/backend_dragones/issues"
+  },
+  "homepage": "https://github.com/n0vat0/backend_dragones#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongo": "^0.1.0"
+  }
+}
