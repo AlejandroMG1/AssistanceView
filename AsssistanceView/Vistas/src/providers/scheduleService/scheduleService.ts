@@ -8,9 +8,9 @@ import {Athlete} from "../../data/athlete";
 import {AssistanceProvider} from "../assistancesService/assistanceService";
 
 export class scheduleProvider {
-  private scheduleList: Schedule[];
+  private scheduleList: Schedule[] = [];
   constructor(){
-    this.scheduleList = scheduleDummy;
+     // this.scheduleList = scheduleDummy;
   }
   getScheduleById(id: number){
 

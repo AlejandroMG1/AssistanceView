@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>{{athlete.name}}</ion-title>
   </ion-navbar>
 
@@ -18,13 +18,13 @@
     Identificacion: {{athlete.dni}}
   </h2>
   <h2>
-    Porcentaje de asistencia ultimo mes: {{porcentajeAsisstance}}
+    Porcentaje de asistencia ultimo mes: {{percentageAssistance}}
   </h2>
   <h2>
     Historial Total de faltas:
   </h2>
   <ion-list>
-      <button ion-item *ngFor="let assistance of asisstances">
+      <button ion-item *ngFor="let assistance of assistances" class="btn-alert">
         <h2 *ngIf="assistance.assisted">{{assistance.date}}</h2>
       </button>
     </ion-list>

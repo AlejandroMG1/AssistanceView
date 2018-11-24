@@ -46,9 +46,10 @@ export class GroupSchedulePage implements OnInit {
   addSchedule(){
     let id = this.scheduleProvier.addSchedule(this.group.id);
     this.schedules = this.scheduleProvier.getSchedulesByIdGroup(this.group.id);
-    if(id > 0){
+    if(id > -1){
       this.createAssistanceReports(id);
     }
+    console.log(this.assistanceProvider.getAllAsistaceReport());
   }
   createAssistanceReports(idSchedule: number){
     this.assistanceProvider.addAllAssistanceReport(this.group.id, this.athleteProvider.getAthletesByIdGroup(this.group.id), this.scheduleProvier.getScheduleById(idSchedule).date);

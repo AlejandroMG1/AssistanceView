@@ -1,8 +1,12 @@
 import { Assistance } from "../../data/assistance";
 import { Athlete } from "../../data/athlete";
+import assistanceDummy from "../../data/dummy/assistanceDummy";
 
 export class AssistanceProvider {
   assistanceList: Assistance[] = [];
+  constructor(){
+    //this.assistanceList = assistanceDummy;
+  }
   addAssistanceReport(assisted: boolean, date: string, idAthlete: number, idGroup: number) {
     let assistance = new Assistance(this.assistanceList.length + 1, assisted, date, idAthlete, idGroup);
     this.assistanceList.push(assistance);

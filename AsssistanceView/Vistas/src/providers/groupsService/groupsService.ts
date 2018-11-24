@@ -2,9 +2,9 @@ import {Group} from "../../data/group";
 import groupDummy from "../../data/dummy/groupDummy";
 
 export class GroupsProvider {
-  private groupList:  Group[];
+  private groupList:  Group[] = [];
   constructor(){
-    this.groupList = groupDummy;
+     this.groupList = groupDummy;
   }
   getGroupList() {
     return this.groupList;
