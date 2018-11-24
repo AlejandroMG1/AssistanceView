@@ -22,10 +22,21 @@
     "@angular/platform-browser-dynamic": "5.2.11",
     "@ionic-native/core": "~4.15.0",
     "@ionic-native/splash-screen": "~4.15.0",
+    "@ionic-native/sqlite": "^4.17.0",
     "@ionic-native/status-bar": "~4.15.0",
+    "@ionic-native/toast": "^4.17.0",
     "@ionic/storage": "2.2.0",
+    "@types/jquery": "^3.3.22",
+    "body-parser": "^1.18.3",
+    "cordova-sqlite-storage": "2.5.2",
+    "cors": "^2.8.5",
+    "db": "^1.1.1",
+    "express": "^4.16.4",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "jquery": "^3.3.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.3.13",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
@@ -35,5 +46,10 @@
     "@ionic/lab": "1.0.11",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-sqlite-storage": {}
+    }
+  }
 }
