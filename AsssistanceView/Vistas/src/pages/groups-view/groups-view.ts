@@ -39,4 +39,7 @@ export class GroupsViewPage implements OnInit{
   ngOnInit(){
     
   }
+  recharge(){
+    this.groupList = this.groupsProvider.getGroupList();
+  }
 }

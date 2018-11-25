@@ -27,11 +27,21 @@
     </ion-card-content>
   </ion-card>
   <h2>
-    Historial Total de faltas:
+    Historial Total:
   </h2>
+  <h5>Rojo: Faltas</h5>
+  <h5>Azul: Asistencias</h5>
   <ion-list>
-      <button ion-item *ngFor="let assistance of assistances" class="btn-alert">
-        <h2 *ngIf="assistance.assisted">{{assistance.date}}</h2>
+
+      <button ion-item *ngFor="let assistance of assistances" >
+        <div *ngIf="assistance.assisted" class="noAssisted">
+          <h2 >{{assistance.date}}</h2>
+        </div>
+        <div *ngIf="!assistance.assisted" class="assisted">
+          <h2 >{{assistance.date}}</h2>
+        </div>
+
       </button>
+
     </ion-list>
 </ion-content>

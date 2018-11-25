@@ -6,14 +6,28 @@ import {map, filter, toArray} from "rxjs/operators";
 import {Group} from "../../data/group";
 import {Athlete} from "../../data/athlete";
 import {AssistanceProvider} from "../assistancesService/assistanceService";
-
+import {Injectable} from "@angular/core";
+import { Storage } from "@ionic/storage";
+@Injectable()
 export class scheduleProvider {
   private scheduleList: Schedule[] = [];
-  constructor(){
-     // this.scheduleList = scheduleDummy;
+  constructor(private storage: Storage){
+    this.getDBSchedules();
   }
-  getScheduleById(id: number){
+   getDBSchedules(){
+       this.storage.get("schedule")
+        .then(data => {
+          if(data==null){
+            this.scheduleList = [];
+          }else{
+            this.scheduleList = JSON.parse(data);
+            console.log("Entro");
+            console.log(JSON.parse(data));
+          }
+        });
+  }
 
+  getScheduleById(id: number){
     return this.scheduleList[id];
   }
   getSchedule1(){
@@ -25,11 +39,17 @@ export class scheduleProvider {
       let day: Schedule = { id: this.scheduleList.length,idGroup , date: today};
       if(!this.scheduleList.find(schedule => schedule.idGroup == idGroup && schedule.date == day.date)){
         this.scheduleList.push(day);
+        this.updateSchedule();
         return day.id;
       }
       return -1;
   }
   getSchedulesByIdGroup(id: number) {
+    this.getDBSchedules();
     return this.getSchedule1().filter(schedule => schedule.idGroup === id);
   }
+  updateSchedule(){
+    this.storage.set("schedule", JSON.stringify(this.scheduleList));
+  }
+
 }

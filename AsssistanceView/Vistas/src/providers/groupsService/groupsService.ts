@@ -1,10 +1,24 @@
 import {Group} from "../../data/group";
 import groupDummy from "../../data/dummy/groupDummy";
-
+import {Injectable} from "@angular/core";
+import { Storage } from "@ionic/storage";
+@Injectable()
 export class GroupsProvider {
   private groupList:  Group[] = [];
-  constructor(){
-     this.groupList = groupDummy;
+
+  constructor(private storage: Storage) {
+    this.getDBSchedules();
+  }
+  getDBSchedules(){
+    this.storage.get("group")
+      .then(data => {
+        if(data==null){
+          this.groupList = [];
+        }else{
+          this.groupList = JSON.parse(data);
+          console.log(JSON.parse(data));
+        }
+      });
   }
   getGroupList() {
     return this.groupList;
@@ -12,6 +26,7 @@ export class GroupsProvider {
   addGroup(name: string){
     let group: Group = new Group(this.groupList.length+1, name);
     this.groupList.push(group);
+    this.updateGroup()
   }
   getGroup (id: number) {
     return this.groupList[id];
@@ -25,6 +40,9 @@ export class GroupsProvider {
   }
   editGroup (group: Group, id: number) {
     this.groupList[id] = group;
+  }
+  updateGroup(){
+    this.storage.set("group", JSON.stringify(this.groupList));
   }
 
 }

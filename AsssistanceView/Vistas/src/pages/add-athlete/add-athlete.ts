@@ -4,6 +4,9 @@ import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { GroupsProvider } from '../../providers/groupsService/groupsService';
 import { Group } from '../../data/group';
 import { AthletesProvider } from '../../providers/athleteService/athletesService'
+import {AssistanceProvider} from "../../providers/assistancesService/assistanceService";
+import {Schedule} from "../../data/schedule";
+import {scheduleProvider} from "../../providers/scheduleService/scheduleService";
 
 /**
  * Generated class for the AddAthletePage page.
@@ -23,7 +26,8 @@ export class AddAthletePage {
   private groups : Group[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, 
-    private groupsProvider:GroupsProvider, private athletesProvider:AthletesProvider) {
+    private groupsProvider:GroupsProvider, private athletesProvider:AthletesProvider,
+              private assistanceProvider: AssistanceProvider, private scheduleProvider: scheduleProvider ) {
     this.groups=this.groupsProvider.getGroupList();
     
     this.todo = this.formBuilder.group({
@@ -44,8 +48,6 @@ export class AddAthletePage {
   addAthlete(){
     let id=this.groupsProvider.getGroupByName(this.todo.get("group").value);
     this.athletesProvider.addAthlete(this.todo.get("dni").value,this.todo.get("name").value,id);
-    console.log(this.athletesProvider.getAthletesByIdGroup(id));
-    console.log(this.athletesProvider.athleteList)
     this.navCtrl.pop();
   }
 }

@@ -1,11 +1,28 @@
 import { Assistance } from "../../data/assistance";
 import { Athlete } from "../../data/athlete";
+import { Storage } from "@ionic/storage";
 import assistanceDummy from "../../data/dummy/assistanceDummy";
-
+import { NativeStorage } from '@ionic-native/native-storage';
+import {Injectable} from "@angular/core";
+import {Schedule} from "../../data/schedule";
+@Injectable()
 export class AssistanceProvider {
   assistanceList: Assistance[] = [];
-  constructor(){
-    //this.assistanceList = assistanceDummy;
+  constructor(private storage: Storage){
+    this.getDBSchedules();
+
+  }
+  getDBSchedules(){
+    this.storage.get("assistancer")
+      .then(data => {
+        if(data==null){
+          this.assistanceList = [];
+        }else{
+          this.assistanceList = JSON.parse(data);
+          console.log("Entro");
+          console.log(JSON.parse(data));
+        }
+      });
   }
   addAssistanceReport(assisted: boolean, date: string, idAthlete: number, idGroup: number) {
     let assistance = new Assistance(this.assistanceList.length + 1, assisted, date, idAthlete, idGroup);
@@ -24,6 +41,7 @@ export class AssistanceProvider {
     for (let athlete of athletes) {
       this.addAssistanceReport(false, date, athlete.id, idGroup);
     }
+    this.updateAssistance();
   }
   getAllAsistaceReport() {
     return this.assistanceList;
@@ -49,6 +67,17 @@ export class AssistanceProvider {
     return this.assistanceList.filter(assistance => {
       return assistance.idGroup === id;
     });
+  }
+  updateAssistance(){
+    this.storage.set("assistancer", JSON.stringify(this.assistanceList));
+  }
+  addAssistanceReportByGroupScheduleandAthleteId(idAthlete: number, schedules : Schedule[], idGroup: number){
+    console.log("==========");
+    console.log(schedules);
+    for(let schedule of schedules){
+      this.addAssistanceReport(false, schedule.date, idAthlete, idGroup);
+    }
+    console.log(this.assistanceList);
   }
 
 }

@@ -49,5 +49,9 @@ export class AthleteListPage implements OnInit {
   athleteAssisted(index: number) {
     console.log(this.assistances[index]);
   }
+  cargaraDb(){
+    this.assistanceReport.updateAssistance();
+    this.navCtrl.popToRoot();
+  }
 
 }

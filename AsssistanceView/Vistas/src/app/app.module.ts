@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GroupsViewPage } from '../pages/groups-view/groups-view';
 import {GroupSchedulePage} from '../pages/group-schedule/group-schedule';
@@ -21,11 +20,12 @@ import {GroupViewHistoricalPage} from "../pages/group-view-historical/group-view
 import {AthleteHistoricalListPage} from "../pages/athlete-historical-list/athlete-historical-list";
 import { AddGroupPage } from '../pages/add-group/add-group';
 import { AthleteHistoryPage } from '../pages/athlete-history/athlete-history';
+import { NativeStorage } from '@ionic-native/native-storage';
+import {IonicStorageModule} from "@ionic/storage";
 
 let pages = [
   MyApp,
   GroupViewHistoricalPage,
-  ContactPage,
   TabsPage,
   AthleteHistoricalListPage,
   GroupsViewPage,
@@ -40,7 +40,8 @@ let pages = [
   declarations: pages,
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: pages,
@@ -48,7 +49,7 @@ let pages = [
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    GroupsProvider,AthletesProvider,scheduleProvider,AssistanceProvider
+    GroupsProvider,AthletesProvider,scheduleProvider,AssistanceProvider, NativeStorage,Storage
   ]
 })
 export class AppModule { }
