@@ -1,9 +1,5 @@
-export class Group {
-  id: number;
+export interface Group {
+  _id: number;
   name: string;
-  constructor(id: number, name: string){
-    this.id = id;
-    this.name = name;
-  }
+  idGroup: number;
 }
-

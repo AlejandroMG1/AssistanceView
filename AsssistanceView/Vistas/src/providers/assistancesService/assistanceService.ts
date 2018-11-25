@@ -1,6 +1,5 @@
 import { Assistance } from '../../data/assistance';
 import { Athlete } from '../../data/athlete';
-import assistanceDummy from '../../data/dummy/assistanceDummy';
 
 export class AssistanceProvider {
   assistanceList: Assistance[] = [];
@@ -35,15 +34,20 @@ export class AssistanceProvider {
     for (let athlete of athletes) {
       this.addAssistanceReport(false, date, athlete.id, idGroup);
     }
-  }
+  } */
   getAllAsistaceReport() {
     return this.assistanceList;
   }
   getReportsByAthleteId(id: number) {
-    return this.assistanceList.filter(assistance => assistance.idAthlete === id);
+    return this.assistanceList.filter(
+      assistance => assistance.idAthlete === id
+    );
   }
   getIdReportByScheduleIdAthleteId(date: string, idAthlete: number): number {
-    return this.assistanceList.findIndex(assistance => assistance.idAthlete === idAthlete && assistance.date === date);
+    return this.assistanceList.findIndex(
+      assistance =>
+        assistance.idAthlete === idAthlete && assistance.date === date
+    );
   }
   getIdReportByScheduleId(date: string, idGroup: number): Assistance[] {
     let assistances: Assistance[] = [];
@@ -54,5 +58,5 @@ export class AssistanceProvider {
     }
 
     return assistances;
-  }*/
+  }
 }

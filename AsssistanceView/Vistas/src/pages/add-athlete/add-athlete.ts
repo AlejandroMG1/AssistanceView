@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { GroupsProvider } from '../../providers/groupsService/groupsService';
-import { Group } from '../../data/group';
-import { AthletesProvider } from '../../providers/athleteService/athletesService';
 import { Observable } from 'rxjs';
+
+import { Group } from '../../data/group';
+import { GroupsProvider } from '../../providers/groupsService/groupsService';
 
 /**
  * Generated class for the AddAthletePage page.
@@ -19,20 +19,17 @@ import { Observable } from 'rxjs';
   templateUrl: 'add-athlete.html'
 })
 export class AddAthletePage {
-  private todo: FormGroup;
-  private groups$: Group[];
+  public athleteForm: FormGroup;
+  public groups$: Observable<Group[]>;
   groupId: number;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     private formBuilder: FormBuilder,
-    private groupsProvider: GroupsProvider,
-    private athletesProvider: AthletesProvider
+    private groupsProvider: GroupsProvider // private athletesProvider: AthletesProvider
   ) {
-    this.groups$ = this.groupsProvider.getGroup(this.groupId);
-
-    this.todo = this.formBuilder.group({
+    this.athleteForm = this.formBuilder.group({
       dni: ['', Validators.required],
       name: [''],
       group: ['']
@@ -43,17 +40,21 @@ export class AddAthletePage {
     console.log('ionViewDidLoad AddAthletePage');
   }
 
-  logForm() {
-    console.log(this.todo.get('group').value);
+  showGroupAthletes(groupId) {
+    return (this.groups$ = this.groupsProvider.getGroup(groupId));
   }
 
-  /* addAthlete() {
-    let id = this.groupsProvider.getGroupByName(this.todo.get('group').value);
-    this.athletesProvider.addAthlete(
-      this.todo.get('dni').value,
-      this.todo.get('name').value,
-      id
-    );
-    this.navCtrl.pop();
-  } */
+  logForm() {
+    console.log(this.athleteForm.get('group').value);
+  }
+
+  addAthlete() {
+    // let id = this.groupsProvider.getGroupByName(this.todo.get('group').value);
+    // this.athletesProvider.addAthlete(
+    //   this.todo.get('dni').value,
+    //   this.todo.get('name').value,
+    //   id
+    // );
+    // this.navCtrl.pop();
+  }
 }

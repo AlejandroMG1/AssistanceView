@@ -72,56 +72,84 @@ connect(function(err, client) {
     );
   });
 
-  const insertAthletes = function(db) {
+  app.get('/schedule', async function(req, res) {
+    debugger;
+    console.log(req.query);
+    if (req.query.idGroup) {
+      return res.json(
+        await db
+          .collection('schedule')
+          .find({ idGroup: +req.query.idGroup })
+          .toArray()
+      );
+    }
+    if (req.query.idAthlete) {
+      return res.json(
+        await db
+          .collection('schedule')
+          .find({ idAthlete: +req.query.idAthlete })
+          .toArray()
+      );
+    }
+    return res.json(
+      await db
+        .collection('assistance')
+        .find({})
+        .toArray()
+    );
+  });
+
+  app.post('/athletes', async function(req, res) {
     // Get the documents collection
     const collection = db.collection('athletes');
     // Insert some documents
-    collection.insertOne(
-      {
-        idAthlete: '123',
-        assisted: false,
-        date: '2016-05-18 05:00:00.000+00:00',
-        grupo: 1
-      },
-      function(err, result) {
-        console.log('Inserted 1 documents into the collection');
-      }
-    );
-  };
+    const result = await collection.insertOne({
+      idAthlete: req.body.idAthlete,
+      assisted: false,
+      date: req.body.date,
+      idGroup: req.body.idGroup
+    });
 
-  const insertGroups = function(db) {
+    return res.json(result.insertedId);
+  });
+
+  app.post('/groups', async function(req, res) {
     // Get the documents collection
     const collection = db.collection('groups');
     // Insert some documents
-    collection.insertOne(
-      {
-        idAthlete: '123',
-        assisted: false,
-        date: '2016-05-18 05:00:00.000+00:00',
-        grupo: 1
-      },
-      function(err, result) {
-        console.log('Inserted 1 documents into the collection');
-      }
-    );
-  };
+    const result = await collection.insertOne({
+      name: req.body.name
+    });
 
-  const insertAssistance = function(db) {
+    return res.json(result.insertedId);
+  });
+
+  app.post('/assistances', async function(req, res) {
     // Get the documents collection
     const collection = db.collection('assistance');
     // Insert some documents
-    collection.insertOne(
-      {
-        idAthlete: '123',
-        assisted: false,
-        date: '2016-05-18 05:00:00.000+00:00',
-        grupo: 1
-      },
-      function(err, result) {
-        console.log('Inserted 1 documents into the collection');
-      }
-    );
-  };
+    const result = await collection.insertOne({
+      idAthlete: req.body.idAthlete,
+      assisted: false,
+      date: req.body.date,
+      idGroup: req.body.idGroup
+    });
+
+    return res.json(result);
+  });
+
+  app.post('/schedules', async function(req, res) {
+    // Get the documents collection
+    const collection = db.collection('schedules');
+    // Insert some documents
+    const result = await collection.insertOne({
+      date: req.body.date,
+      idGroup: req.body.idGroup
+    });
+
+    return res.json(result);
+  });
+
   app.listen(app.get('port'), function() {
     console.log(
       "You're a wizard, Harry. I'm a what? Yes, a wizard, on port",

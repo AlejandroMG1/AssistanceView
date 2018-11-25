@@ -30,6 +30,7 @@
     "body-parser": "^1.18.3",
     "cordova-sqlite-storage": "2.5.2",
     "cors": "^2.8.5",
+    "date-fns": "^1.29.0",
     "db": "^1.1.1",
     "express": "^4.16.4",
     "ionic-angular": "3.9.2",

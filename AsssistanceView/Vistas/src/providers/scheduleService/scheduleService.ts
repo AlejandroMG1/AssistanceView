@@ -1,21 +1,26 @@
-import { Schedule } from '../../data/schedule';
-import scheduleDummy from '../../data/dummy/scheduleDummy';
-import 'rxjs/add/observable/from';
-import { Assistance } from '../../data/assistance';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
-const API: string = 'http://localhost:8200';
+import { Assistance } from '../../data/assistance';
+import { environment } from '../../environments/environment';
 
+import { format } from 'date-fns';
+import { Schedule } from '../../data/schedule';
+@Injectable()
 export class scheduleProvider {
   private scheduleList: Schedule[] = [];
   constructor(public http: HttpClient) {}
+
   getScheduleById(id: number) {
-    return this.http.get<Assistance[]>(API + '/schedule', {
-      params: new HttpParams().set('idAthlete', id.toString())
+    debugger;
+    return this.http.get<Schedule[]>(`${environment.api}/schedule`, {
+      params: new HttpParams().set('date', id.toString())
     });
   }
   addSchedule(idGroup: number): number {
+    debugger;
     let todayDate = new Date();
+    //let date: string = format(new Date(), 'DD MMM YYYY');
     let today: string =
       todayDate.getDate() +
       '/' +
@@ -29,12 +34,12 @@ export class scheduleProvider {
       )
     ) {
       this.scheduleList.push(day);
-      return day.id;
+      return day.idGroup;
     }
-    return -1;
   }
+
   getSchedulesByIdGroup(id: number) {
-    return this.http.get<Assistance[]>(API + 'schedule', {
+    return this.http.get<Assistance[]>(`${environment.api}/schedule`, {
       params: new HttpParams().set('idGroup', id.toString())
     });
   }

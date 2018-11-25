@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {GroupsProvider} from "../../providers/groupsService/groupsService";
-import {Group} from "../../data/group";
-import { AthleteHistoricalListPage} from "../athlete-historical-list/athlete-historical-list";
+import { GroupsProvider } from '../../providers/groupsService/groupsService';
+import { Group } from '../../data/group';
+import { AthleteHistoricalListPage } from '../athlete-historical-list/athlete-historical-list';
+import { Observable } from 'rxjs';
 
 /**
  * Generated class for the GroupViewHistoricalPage page.
@@ -14,26 +15,22 @@ import { AthleteHistoricalListPage} from "../athlete-historical-list/athlete-his
 @IonicPage()
 @Component({
   selector: 'page-group-view-historical',
-  templateUrl: 'group-view-historical.html',
+  templateUrl: 'group-view-historical.html'
 })
-export class GroupViewHistoricalPage implements OnInit{
-  groupList : Group[] = [];
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              private groupsProvider: GroupsProvider) {
-    this.groupList = this.groupsProvider.getGroupList();
-    console.log(this.groupList);
+export class GroupViewHistoricalPage implements OnInit {
+  groupList$: Observable<Group[]>;
 
-  }
-  onLoadList(id: number){
-    this.navCtrl.push(AthleteHistoricalListPage, {idGroup: id});
-  }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GroupViewHistoricalPage');
-  }
-  ngOnInit(){
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private groupsProvider: GroupsProvider
+  ) {}
 
-
+  ngOnInit() {
+    this.groupList$ = this.groupsProvider.getGroupList();
   }
 
+  onLoadList(id: number) {
+    this.navCtrl.push(AthleteHistoricalListPage, { idGroup: id });
+  }
 }
