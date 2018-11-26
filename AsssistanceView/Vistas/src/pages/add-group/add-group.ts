@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GroupsProvider } from '../../providers/groupsService/groupsService';
+import { GroupsViewPage } from '../groups-view/groups-view';
 
 /**
  * Generated class for the AddGroupPage page.
@@ -20,7 +22,8 @@ export class AddGroupPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private formBuilder: FormBuilder // private groupsProvider: GroupsProvider
+    private formBuilder: FormBuilder,
+    private groupsProvider: GroupsProvider
   ) {}
 
   ngOnInit() {
@@ -30,8 +33,13 @@ export class AddGroupPage {
   }
 
   addGroup() {
-    // this.groupsProvider.addGroup(this.todo.get("name").value)
-    // this.groupsProvider.getGroupList();
-    // this.navCtrl.pop();
+    if(this.groupForm.invalid){
+      return;
+    }
+     this.groupsProvider.addGroup(this.groupForm.value.name).subscribe(id => {
+        
+      this.navCtrl.setRoot(GroupsViewPage);
+     });
+
   }
 }

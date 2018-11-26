@@ -12,10 +12,11 @@ export class GroupsProvider {
     return this.http.get<Group[]>(`${environment.api}/groups`);
   }
 
-  /* addGroup(name: string){
-    let group: Group = new Group(this.groupList.length+1, name);
-    this.groupList.push(group);S
-  } */
+  addGroup(name: string){
+    return this.http.post<string>(`${environment.api}/groups`, {
+      name
+    });
+  } 
 
   getGroup(id: number) {
     return this.http.get<Group[]>(`${environment.api}/groups`, {

@@ -1,12 +1,8 @@
-export class Athlete{
-  id: number;
-  idGroup: number;
+export interface Athlete{
+  _id?: string;
+  idGroup: string;
+  date: string;
   name: string;
-  dni: number;
-  constructor(id: number, dni: number, name: string, idGroup: number){
-    this.id = id;
-    this.dni = dni;
-    this.name = name;
-    this.idGroup = idGroup;
-  }
+  idAthlete: string;
+  
 }

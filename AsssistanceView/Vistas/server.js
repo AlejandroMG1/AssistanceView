@@ -19,12 +19,13 @@ connect(function(err, client) {
   }
 
   app.get('/athletes', async function(req, res) {
+
     console.log(req.query);
     if (req.query.idGroup) {
       return res.json(
         await db
           .collection('athletes')
-          .find({ idGroup: +req.query.idGroup })
+          .find({ idGroup: req.query.idGroup })
           .toArray()
       );
     }
@@ -52,7 +53,7 @@ connect(function(err, client) {
       return res.json(
         await db
           .collection('assistance')
-          .find({ idGroup: +req.query.idGroup })
+          .find({ idGroup: req.query.idGroup })
           .toArray()
       );
     }
@@ -60,7 +61,7 @@ connect(function(err, client) {
       return res.json(
         await db
           .collection('assistance')
-          .find({ idAthlete: +req.query.idAthlete })
+          .find({ idAthlete: req.query.idAthlete })
           .toArray()
       );
     }
@@ -73,13 +74,13 @@ connect(function(err, client) {
   });
 
   app.get('/schedule', async function(req, res) {
-    debugger;
+    
     console.log(req.query);
     if (req.query.idGroup) {
       return res.json(
         await db
           .collection('schedule')
-          .find({ idGroup: +req.query.idGroup })
+          .find({ idGroup: req.query.idGroup })
           .toArray()
       );
     }
@@ -87,13 +88,13 @@ connect(function(err, client) {
       return res.json(
         await db
           .collection('schedule')
-          .find({ idAthlete: +req.query.idAthlete })
+          .find({ idAthlete: req.query.idAthlete })
           .toArray()
       );
     }
     return res.json(
       await db
-        .collection('assistance')
+        .collection('schedule')
         .find({})
         .toArray()
     );
@@ -107,6 +108,7 @@ connect(function(err, client) {
       idAthlete: req.body.idAthlete,
       assisted: false,
       date: req.body.date,
+      name: req.body.name,
       idGroup: req.body.idGroup
     });
 
@@ -132,15 +134,15 @@ connect(function(err, client) {
       idAthlete: req.body.idAthlete,
       assisted: false,
       date: req.body.date,
-      idGroup: req.body.idGroup
+      idSchedule: req.body.idSchedule
     });
 
     return res.json(result);
   });
 
-  app.post('/schedules', async function(req, res) {
+  app.post('/schedule', async function(req, res) {
     // Get the documents collection
-    const collection = db.collection('schedules');
+    const collection = db.collection('schedule');
     // Insert some documents
     const result = await collection.insertOne({
       date: req.body.date,
@@ -149,6 +151,20 @@ connect(function(err, client) {
 
     return res.json(result);
   });
+
+  app.delete('/assistances/:idAthlete/:idSchedule', async function(req, res) {
+    // Get the documents collection
+    const collection = db.collection('assistance');
+    // Insert some documents
+    console.log("Delete: ",req.params);
+    const result = await collection.deleteOne({
+     $and: [ {idAthlete: {$eq : req.params.idAthlete}},
+      {idSchedule: {$eq: req.params.idSchedule}} ]
+    });
+
+    return res.json(result);
+  });
+
 
   app.listen(app.get('port'), function() {
     console.log(

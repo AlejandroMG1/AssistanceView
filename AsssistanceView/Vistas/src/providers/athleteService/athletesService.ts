@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { Athlete } from '../../data/athlete';
 import { environment } from '../../environments/environment';
+import { tap } from 'rxjs/operators';
 
 @Injectable()
 export class AthletesProvider {
@@ -10,19 +11,16 @@ export class AthletesProvider {
 
   constructor(public http: HttpClient) {}
 
-  addAthlete(dni: number, name: string, idGroup: number) {
-    let athlete: Athlete = new Athlete(
-      this.athleteList.length + 1,
-      dni,
-      name,
-      idGroup
-    );
-    this.athleteList.push(athlete);
+  addAthlete(athlete: Athlete) {
+   
+    return this.http.post<string>(`${environment.api}/athletes`, athlete).pipe(tap(idAthlete => {
+      this.athleteList.push({...athlete, idAthlete: idAthlete});
+    }));
   }
 
-  getAthletesByIdGroup(id: number) {
+  getAthletesByIdGroup(id: string) {
     return this.http.get<Athlete[]>(`${environment.api}/athletes`, {
-      params: new HttpParams().set('idGroup', id.toString())
+      params: new HttpParams().set('idGroup', id)
     });
   }
 }

@@ -38,7 +38,6 @@ export class GroupsViewPage {
   }
 
   openGroupSchedule(group: Group) {
-    debugger;
     this.navCtrl.push(GroupSchedulePage, group);
   }
 }

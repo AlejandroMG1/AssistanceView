@@ -1,5 +1,5 @@
 export interface Schedule {
-  id?: number;
+  _id?: string;
   date: string;
-  idGroup: number;
+  idGroup: string;
 }

@@ -7,7 +7,7 @@ import { AthletesProvider } from '../../providers/athleteService/athletesService
 import { scheduleProvider } from '../../providers/scheduleService/scheduleService';
 import { AthleteListPage } from '../athlete-list/athlete-list';
 import { Group } from '../../data/group';
-import { AssistanceProvider } from '../../providers/assistancesService/assistanceService';
+import { switchMap } from 'rxjs/operators';
 
 /**
  * Generated class for the GroupSchedulePage page.
@@ -30,35 +30,29 @@ export class GroupSchedulePage implements OnInit {
     public navParams: NavParams,
     private scheduleProvider: scheduleProvider,
     private athleteProvider: AthletesProvider,
-    private assistanceProvider: AssistanceProvider
   ) {}
 
   ngOnInit() {
     this.group = this.navParams.data;
     console.log('Group: ', this.group);
-    let a = 1;
     this.schedule$ = this.scheduleProvider.getSchedulesByIdGroup(
-      this.group.idGroup
+      this.group._id
     );
     console.log(this.group._id);
   }
 
   showGroupAthletes(schedule$: Schedule) {
-    debugger;
+  
     this.navCtrl.push(AthleteListPage, {
-      idSchedule: schedule$.idGroup
+      idGroup: this.group._id, //Anadido por Juan gallo
+      schedule: schedule$ 
     });
   }
 
   addSchedule() {
-    let id = this.scheduleProvider.addSchedule(this.group._id);
-    this.schedule$ = this.scheduleProvider.getSchedulesByIdGroup(
-      this.group._id
-    );
-    if (id > -1) {
-      this.createAssistanceReports(id);
-    }
-    //console.log(this.assistanceProvider.getAllAsistaceReport());
+    this.schedule$ = this.scheduleProvider.addSchedule(this.group._id).pipe(switchMap(idSchedule =>
+      this.scheduleProvider.getSchedulesByIdGroup(this.group._id)));
+    
   }
   createAssistanceReports(idSchedule: number) {
     //this.assistanceProvider.addAllAssistanceReport();
