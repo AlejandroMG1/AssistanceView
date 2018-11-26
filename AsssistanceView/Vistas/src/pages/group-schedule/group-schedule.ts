@@ -6,6 +6,7 @@ import { Athlete } from '../../data/athlete';
 import { scheduleProvider } from '../../providers/scheduleService/scheduleService';
 import {AssistanceProvider} from "../../providers/assistancesService/assistanceService";
 import {AthletesProvider} from "../../providers/athleteService/athletesService";
+import {Group} from "../../data/group";
 
 /**
  * Generated class for the GroupSchedulePage page.
@@ -21,12 +22,7 @@ import {AthletesProvider} from "../../providers/athleteService/athletesService";
 })
 export class GroupSchedulePage implements OnInit {
 
-  group: {
-    id: number,
-    name: string,
-    schedules: Schedule[],
-    athletes:Athlete[]
-  };
+  group: Group;
   schedules: Schedule[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
@@ -48,6 +44,9 @@ export class GroupSchedulePage implements OnInit {
     this.schedules =  this.scheduleProvier.getSchedulesByIdGroup(this.group.id);
   }
   addSchedule(){
+    if(this.group.complete == false){
+      this.group.complete = true;
+    }
     let id = this.scheduleProvier.addSchedule(this.group.id);
     this.schedules = this.scheduleProvier.getSchedulesByIdGroup(this.group.id);
     if(id > -1){

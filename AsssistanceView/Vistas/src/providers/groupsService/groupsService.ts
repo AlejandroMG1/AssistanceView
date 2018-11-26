@@ -24,7 +24,7 @@ export class GroupsProvider {
     return this.groupList;
   }
   addGroup(name: string){
-    let group: Group = new Group(this.groupList.length+1, name);
+    let group: Group = new Group(this.groupList.length+1, name,false);
     this.groupList.push(group);
     this.updateGroup()
   }
@@ -40,6 +40,12 @@ export class GroupsProvider {
   }
   editGroup (group: Group, id: number) {
     this.groupList[id] = group;
+  }
+  getGroupsNotComplete(){
+    return this.groupList.filter( group => group.complete == false );
+  }
+  updateCompleteGroup(group: Group){
+    group.complete =true;
   }
   updateGroup(){
     this.storage.set("group", JSON.stringify(this.groupList));

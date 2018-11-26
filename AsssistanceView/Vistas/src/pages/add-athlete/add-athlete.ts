@@ -28,7 +28,7 @@ export class AddAthletePage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, 
     private groupsProvider:GroupsProvider, private athletesProvider:AthletesProvider,
               private assistanceProvider: AssistanceProvider, private scheduleProvider: scheduleProvider ) {
-    this.groups=this.groupsProvider.getGroupList();
+    this.groups=this.groupsProvider.getGroupsNotComplete();
     
     this.todo = this.formBuilder.group({
       dni: ['', Validators.required],
