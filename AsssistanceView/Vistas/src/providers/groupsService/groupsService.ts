@@ -1,5 +1,4 @@
 import {Group} from "../../data/group";
-import groupDummy from "../../data/dummy/groupDummy";
 import {Injectable} from "@angular/core";
 import { Storage } from "@ionic/storage";
 @Injectable()
